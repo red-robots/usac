@@ -24,7 +24,7 @@
   * Edit the variables as per your project requirements.
   */
 
-var project             = 'AC-Starter'; // Project Name.
+var project             = 'USAC'; // Project Name.
 var projecturl          = 'http://localhost:8888/austincrane/ACStarter/'; // Project URL. Could be something like localhost:8888.
 
 
