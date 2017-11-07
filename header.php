@@ -25,23 +25,24 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'acstarter' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="wrapper">
-			
-			<?php if(is_home()) { ?>
-	            <h1 class="logo">
-	            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-	            </h1>
-	        <?php } else { ?>
-	            <div class="logo">
-	            <a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
-	            </div>
-	        <?php } ?>
-
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'acstarter' ); ?></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			</nav><!-- #site-navigation -->
-	</div><!-- wrapper -->
+		<?php get_template_part("template-parts/content","top-bar");
+		$header_background = get_field("header_background");?>
+		<div class="row-2" <?php if($header_background):
+			echo 'style="background-image: url('.$header_background['url'].');"';
+		endif;?>>	
+			<div class="row-1">
+				<div class="logo">
+					<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
+				</div>
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'acstarter' ); ?></button>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav><!-- #site-navigation -->
+			</div><!--.row-1-->
+			<header class="row-2">
+				<h1><?php the_title();?></h1>
+			</header><!--.row-2-->
+		</div><!-- row-2 -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content wrapper">
