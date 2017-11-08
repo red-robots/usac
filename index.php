@@ -28,4 +28,4 @@ get_header("index"); ?>
 	</div><!-- #primary -->
 
 <?php
-get_footer();
+get_footer("index");

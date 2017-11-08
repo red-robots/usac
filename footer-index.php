@@ -12,10 +12,29 @@
 ?>
 
 	</div><!-- #content -->
-	<?php $footer_background = get_field("footer_background");?>
+	<?php $footer_background = get_field("footer_background","option");?>
 	<footer id="colophon" class="site-footer" role="contentinfo" <?php if($footer_background):
 		echo 'style="background-image: url('.$footer_background['url'].');"';	
 	endif;?>>
+		<?php $delivery_methods = get_field("delivery_methods",35);
+		$delivery_methods_title = get_field("delivery_methods_title",35);
+		if($delivery_methods):?>
+			<section class="delivery-methods">
+				<?php if($delivery_methods_title):?>
+					<header><h2><?php echo $delivery_methods_title;?></h2></header>
+				<?php endif;
+				foreach($delivery_methods as $row):?>
+					<?php if($row['image']&&$row['title']&&$row['link']):?>
+						<div class="method" 
+						<?php echo 'style="background-image: url('.$row['image']['sizes']['large'].');"';?>>
+							<a href="<?php echo $row['link'];?>">
+								<h3><?php echo $row['title'];?></h3>
+							</a>
+						</div><!--.method-->
+					<?php endif;?>
+				<?php endforeach;?>
+			</section><!--.delivery-methods-->
+		<?php endif;?>
 		<section class="row-1">
 			<?php $footer_row_1_copy = get_field("footer_row_1_copy","option");
 			$footer_row_1_link = get_field("footer_row_1_link","option");
