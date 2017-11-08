@@ -38,6 +38,9 @@ function acstarter_setup() {
   register_nav_menus( array(
     'primary' => esc_html__( 'Primary', 'acstarter' ),
     'sitemap' => esc_html__( 'Sitemap', 'acstarter' ),
+    'quick-links' => esc_html__( 'Quick Links', 'acstarter' ),
+    'resources' => esc_html__( 'Resources', 'acstarter' ),
+    'company' => esc_html__( 'Company', 'acstarter' ),
   ) );
 
   /*
