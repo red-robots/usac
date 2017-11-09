@@ -1,0 +1,55 @@
+.template-index {
+    >.row-1 {
+        >.col-1 {
+            iframe {
+
+            }
+        }
+        >.col-2.copy {
+
+        }
+    }
+    >.row-2 {
+        a {
+
+        }
+    }
+    >.row-3.copy {
+
+    }
+    >.row-4 {
+        .service {
+            >.col-1 {
+                img {
+
+                }
+            }
+            >.col-2.copy {
+
+            }
+        }
+    }
+}
+.template-page, .template-sitemap, .error-404 {
+    >.col-1 {
+
+    }
+    >.col-2 {
+        .copy {
+
+        }
+        .services {
+            >.row-1 {
+
+            }
+            >.row {
+                >.col-1 {
+
+                }
+                >.col-2 {
+
+                }
+            }
+        }
+    }
+}

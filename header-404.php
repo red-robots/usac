@@ -43,23 +43,7 @@
 				<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'acstarter' ); ?></h1>
 			</header><!--.row-2-->
 		</div><!-- row-2 -->
-		<?php $header_icons = get_field("header_icons","option");
-		$header_icons_background = get_field("header_icons_background","option");
-		if($header_icons):?>
-			<div class="row-3" <?php if($header_icons_background): 
-				echo 'style="background-image: url('.$header_icons_background['url'].');"';
-			endif;?>>
-				<?php foreach($header_icons as $row):
-					if($row['link'] && $row['image']):?>
-						<div class="icon">
-							<a href="<?php echo $row['link'];?>">
-								<img src="<?php echo $row['image']['sizes']['thumbnail'];?>" alt="<?php echo $row['image']['alt'];?>">
-							</a>
-						</div><!--.icon-->
-					<?php endif;
-				endforeach;?>
-			</div><!--.row-3-->
-		<?php endif;?>
+		<?php get_template_part("template-parts/content","bottom-bar");?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content wrapper">

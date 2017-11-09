@@ -22,17 +22,19 @@
 			<section class="delivery-methods">
 				<?php if($delivery_methods_title):?>
 					<header><h2><?php echo $delivery_methods_title;?></h2></header>
-				<?php endif;
-				foreach($delivery_methods as $row):?>
-					<?php if($row['image']&&$row['title']&&$row['link']):?>
-						<div class="method" 
-						<?php echo 'style="background-image: url('.$row['image']['sizes']['large'].');"';?>>
-							<a href="<?php echo $row['link'];?>">
-								<h3><?php echo $row['title'];?></h3>
-							</a>
-						</div><!--.method-->
-					<?php endif;?>
-				<?php endforeach;?>
+				<?php endif;?>
+				<div class="wrapper">
+					<?php foreach($delivery_methods as $row):?>
+						<?php if($row['image']&&$row['title']&&$row['link']):?>
+							<div class="method" 
+							<?php echo 'style="background-image: url('.$row['image']['sizes']['large'].');"';?>>
+								<a href="<?php echo $row['link'];?>">
+									<h3><?php echo $row['title'];?></h3>
+								</a>
+							</div><!--.method-->
+						<?php endif;?>
+					<?php endforeach;?>
+				</div><!--.wrapper-->
 			</section><!--.delivery-methods-->
 		<?php endif;?>
 		<section class="row-1">

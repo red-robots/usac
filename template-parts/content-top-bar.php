@@ -31,13 +31,13 @@
     if(($quote_link&&$quote_text)||$telephone_number||($account_link&&$account_text)):?>
         <div class="col-2">
             <?php if($telephone_number):?>
-                <a href="<?php echo preg_replace("[^0-9]","",$telephone_number);?>"><?php echo $telephone_number;?></a>
+                <a class="telephone" href="<?php echo preg_replace("[^0-9]","",$telephone_number);?>"><?php echo $telephone_number;?></a>
             <?php endif;
             if($quote_link&&$quote_text):?>
-                <a href="<?php echo $quote_link;?>"><?php echo $quote_text;?></a>
+                <a class="quote" href="<?php echo $quote_link;?>"><?php echo $quote_text;?></a>
             <?php endif;
             if($account_link&&$account_text):?>
-                <a href="<?php echo $account_link;?>"><?php echo $account_text;?></a>
+                <a class="account" href="<?php echo $account_link;?>"><i class="fa fa-user"></i><?php echo $account_text;?></a>
             <?php endif;?>
         </div><!--.col-2-->
     <?php endif;?>

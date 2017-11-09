@@ -35,7 +35,7 @@
     <?php endif;
     $copy = get_field("row_3_copy");
     if($copy):?>
-        <section class="row-3">
+        <section class="row-3 copy">
             <?php echo $copy;?>
         </section><!--.row-3-->
     <?php endif;
@@ -51,7 +51,7 @@
                             </div><!--.col-1-->
                         <?php endif;
                         if($row['copy']):?>
-                            <div class="col-2">
+                            <div class="col-2 copy">
                                 <?php echo $copy;?>
                             </div><!--.col-2-->
                         <?php endif;?>    

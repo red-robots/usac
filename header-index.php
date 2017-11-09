@@ -32,7 +32,7 @@
 		endif;?>>	
 			<div class="row-1">
 				<h1 class="logo">
-					<a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+					<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
 				</h1>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'acstarter' ); ?></button>
@@ -59,27 +59,11 @@
 					</div><!--.call .copy-->
 				<?php endif;
 				if($telephone_number):?>
-					<a class="tel" href="<?php echo preg_replace("[^0-9]","",$telephone_number);?>"><?php echo $telephone_number;?></a>
+					<a class="telephone" href="<?php echo preg_replace("[^0-9]","",$telephone_number);?>"><?php echo $telephone_number;?></a>
 				<?php endif;?>
 			</div><!--.row-2-->
-			<?php $header_icons = get_field("header_icons","option");
-			$header_icons_background = get_field("header_icons_background","option");
-			if($header_icons):?>
-				<div class="row-3" <?php if($header_icons_background): 
-					echo 'style="background-image: url('.$header_icons_background['url'].');"';
-				endif;?>>
-					<?php foreach($header_icons as $row):
-						if($row['link'] && $row['image']):?>
-							<div class="icon">
-								<a href="<?php echo $row['link'];?>">
-									<img src="<?php echo $row['image']['sizes']['thumbnail'];?>" alt="<?php echo $row['image']['alt'];?>">
-								</a>
-							</div><!--.icon-->
-						<?php endif;
-					endforeach;?>
-				</div><!--.row-3-->
-			<?php endif;?>
 		</div><!-- row-2 -->
+		<?php get_template_part("template-parts/content","bottom-bar");?>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content wrapper">
