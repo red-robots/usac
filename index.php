@@ -16,14 +16,10 @@ get_header("index"); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-		<?php /* Start the Loop */
-			if ( have_posts() ) :
-
-				get_template_part( 'template-parts/content', "index" );
-
-			endif;?>
-
+			<div class="wrapper cap">
+				<?php /* Start the Loop */
+				get_template_part( 'template-parts/content', "index" );?>
+			</div><!--.wrapper .cap-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -1,5 +1,9 @@
 .template-index {
     >.row-1 {
+        border-width: 3px;
+        border-style: solid;
+        border-image:
+            linear-gradient(90deg, $color__usac-dark-blue, $color__usac-light-blue) 3 round;
         >.col-1 {
             iframe {
 

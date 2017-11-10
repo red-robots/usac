@@ -1233,7 +1233,7 @@ optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
-body,button,input,select,textarea{color:#404040;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
+body,button,input,select,textarea{color:#677897;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.5}
 h1,h2,h3,h4,h5,h6{clear:both}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
@@ -1381,25 +1381,27 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
+.cap{max-width:1300px;margin:0 auto}
 .clear-bottom:after{clear:both;content:"";display:block}
-.copy{font-size:14px;color:#404040}
+.copy{font-size:14px;color:#677897}
 @media screen and (min-width:600px){.copy{font-size:16px}
 }.copy>*:first-child{margin-top:0;padding-top:0}
 .copy>*:last-child{margin-bottom:0;padding-bottom:0}
 .copy p{margin:20px 0}
 .copy strong,.copy b,.copy em{font-weight:800}
-.copy a{text-decoration:none;color:#404040;position:relative}
-.copy a:hover{color:#404040;text-decoration:underline}
-.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:#404040}
+.copy a{text-decoration:none;color:#677897;position:relative}
+.copy a:hover{color:#677897;text-decoration:underline}
+.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:#677897}
 .copy h1{font-size:30px}
 .copy h2{font-size:25px}
 .copy h3{font-size:20px}
 .copy ul,.copy ol{padding:0;margin:0 0 20px 20px;font-size:inherit}
 .copy ul li,.copy ol li{margin:0;font-size:inherit;padding:0;list-style-type:none;text-indent:-14px}
-.copy ul li:before,.copy ol li:before{content:"\25A0";color:#404040;margin-right:5px}
+.copy ul li:before,.copy ol li:before{content:"\25A0";color:#677897;margin-right:5px}
 .copy ul li a,.copy ol li a{cursor:pointer}
-.copy ul li a:hover,.copy ol li a:hover{color:#404040}
+.copy ul li a:hover,.copy ol li a:hover{color:#677897}
 .copy ul li ul.sub-menu,.copy ol li ul.sub-menu{margin:0}
+.template-index>.row-1{border-width:3px;border-style:solid;-webkit-border-image:-webkit-linear-gradient(left,#11269b,#00e4f7) 3 round;-o-border-image:linear-gradient(90deg,#11269b,#00e4f7) 3 round;border-image:linear-gradient(90deg,#11269b,#00e4f7) 3 round}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
