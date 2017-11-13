@@ -30,9 +30,10 @@
 	<header id="masthead" class="site-header" role="banner">
 		<?php get_template_part("template-parts/content","top-bar");
 		$header_background = get_field("header_background");?>
-		<div class="row-2" <?php if($header_background):
-			echo 'style="background-image: url('.$header_background['url'].');"';
-		endif;?>>	
+		<div class="row-2">
+			<div class="background-image" <?php if($header_background):
+				echo 'style="background-image: url('.$header_background['url'].');"';
+			endif;?>></div><!--.background-image-->
 			<div class="wrapper cap">
 				<div class="row-1">
 					<h1 class="logo">
@@ -63,7 +64,7 @@
 						</div><!--.call .copy-->
 					<?php endif;
 					if($telephone_number):?>
-						<a class="telephone" href="<?php echo preg_replace("[^0-9]","",$telephone_number);?>"><?php echo $telephone_number;?></a>
+						<a class="telephone" href="tel:<?php echo preg_replace("[^0-9]","",$telephone_number);?>"><?php echo $telephone_number;?></a>
 					<?php endif;?>
 				</div><!--.row-2-->
 			</div><!--.wrapper .cap-->

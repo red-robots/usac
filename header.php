@@ -29,9 +29,10 @@
 	<header id="masthead" class="site-header" role="banner">
 		<?php get_template_part("template-parts/content","top-bar");
 		$header_background = get_field("header_background");?>
-		<div class="row-2" <?php if($header_background):
-			echo 'style="background-image: url('.$header_background['url'].');"';
-		endif;?>>	
+		<div class="row-2">
+			<div class="background-image"<?php if($header_background):
+				echo 'style="background-image: url('.$header_background['url'].');"';
+			endif;?>></div><!--.background-image-->
 			<div class="wrapper cap">
 				<div class="row-1">
 					<div class="logo">

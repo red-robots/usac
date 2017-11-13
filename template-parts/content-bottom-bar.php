@@ -4,7 +4,7 @@ if($header_icons):?>
     <div class="row-3" <?php if($header_icons_background): 
         echo 'style="background-image: url('.$header_icons_background['url'].');"';
     endif;?>>
-        <div class="wrapper cap">
+        <div class="wrapper cap clear-bottom">
             <?php foreach($header_icons as $row):
                 if($row['link'] && $row['image']):?>
                     <div class="icon">

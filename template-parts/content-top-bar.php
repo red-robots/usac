@@ -9,19 +9,19 @@
                         <?php echo $header_select_text;?>
                     <?php endif;?>
                     <i class="fa fa-search"></i>
+                    <div class="hidden">
+                        <?php foreach($header_select as $row):?>
+                            <?php if($row['internal_external']&&($row['link_internal']||$row['link_external'])&&$row['text']):?>
+                                <a href="<?php 
+                                    if(strcmp($row['internal_external'],'internal')===0):
+                                        echo $row['link_internal'];
+                                    else:
+                                        echo $row['link_external'];
+                                    endif;?>"><?php echo $row['text'];?></a>
+                            <?php endif;?>
+                        <?php endforeach;?>
+                    </div><!--.hidden-->
                 </div><!--.select-->
-                <div class="hidden">
-                    <?php foreach($header_select as $row):?>
-                        <?php if($row['internal_external']&&($row['link_internal']||$row['link_external'])&&$row['text']):?>
-                            <a href="<?php 
-                                if(strcmp($row['internal_external'],'internal')===0):
-                                    echo $row['link_internal'];
-                                else:
-                                    echo $row['link_external'];
-                                endif;?>"><?php echo $row['text'];?></a>
-                        <?php endif;?>
-                    <?php endforeach;?>
-                </div><!--.hidden-->
             </div><!--.col-1-->
         <?php endif;?>
         <?php $telephone_number = get_field("telephone_number","option");
@@ -32,7 +32,7 @@
         if(($quote_link&&$quote_text)||$telephone_number||($account_link&&$account_text)):?>
             <div class="col-2">
                 <?php if($telephone_number):?>
-                    <a class="telephone" href="<?php echo preg_replace("[^0-9]","",$telephone_number);?>"><?php echo $telephone_number;?></a>
+                    <a class="telephone" href="tel:<?php echo preg_replace("[^0-9]","",$telephone_number);?>"><?php echo $telephone_number;?></a>
                 <?php endif;
                 if($quote_link&&$quote_text):?>
                     <a class="quote" href="<?php echo $quote_link;?>"><?php echo $quote_text;?></a>
