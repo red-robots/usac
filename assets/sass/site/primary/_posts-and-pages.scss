@@ -123,23 +123,38 @@
     }
 }
 .template-page, .template-sitemap, .error-404 {
-    >.col-1 {
-
-    }
-    >.col-2 {
-        .copy {
+    >.row-1 {
+        >.col-1 {
 
         }
-        .services {
-            >.row-1 {
+        >.col-2 {
+
+        }
+    }
+    >.row-2 {
+        >aside.col-1 {
+            .menu {
 
             }
-            >.row {
-                >.col-1 {
+            .widget {
+
+            }
+        }
+        >.col-2 {
+            .copy {
+
+            }
+            .services {
+                >.row-1 {
 
                 }
-                >.col-2 {
+                >.row {
+                    >.col-1 {
 
+                    }
+                    >.col-2 {
+
+                    }
                 }
             }
         }

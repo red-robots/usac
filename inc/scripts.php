@@ -18,13 +18,18 @@ function acstarter_scripts() {
 			true 
 		);
 
-	wp_enqueue_script( 
+		wp_enqueue_script( 
 			'acstarter-custom', 
 			get_template_directory_uri() . '/assets/js/custom.js', 
 			array(), '20120206', 
 			true 
 		);
-
+		wp_enqueue_script( 
+			'font-awesome', 'https://use.fontawesome.com/8f931eabc1.js', 
+			array(), '20171114', 
+			true 
+		);
+		
 	// wp_enqueue_script( 
 	// 		'acstarter-flexslider', 
 	// 		get_template_directory_uri() . '/js/flexslider.js', 

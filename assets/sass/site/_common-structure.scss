@@ -194,6 +194,7 @@
 		}
 	}
 	>.row-2 {
+		border-bottom: 1px solid $color__usac-grey;
 		position: relative;
 		.background-image {
 			position: absolute;
@@ -220,7 +221,6 @@
 		>.wrapper {
 			>.wrapper {
 				padding: 5px 0 50px 0;
-				border-bottom: 1px solid $color__usac-grey;
 				@media screen and (min-width: $midwidth){
 					padding: 5px 3.28% 50px 3.28%;
 				}
@@ -413,59 +413,242 @@
 }
 
 #colophon {
-	>.delivery-methods {
-		header {
-			h2 {
-
-			}
-		}
-		>.wrapper {
-			.method {
-				a {
-					h3 {
-
+	background-size: 100% 100%;
+	background-position: top center;
+	background-repeat: no-repeat;
+	padding: 10% 0 0 0;
+	>.wrapper {
+		>.delivery-methods {
+			border-bottom: 1px solid $color__usac-light-grey;
+			>.wrapper {
+				header {
+					text-align: center;
+					h2 {
+						font-size: 35px;
+						font-weight: 500;
+						line-height: 1.2;
+						margin: 0;
+						text-transform: none;
+					}
+				}
+				>.wrapper {
+					padding: 0 0 20px 0;
+					@media screen and (min-width: $midwidth){
+						padding: 4% 4% 10% 4%;
+					}
+					.method {
+						background-position: center;
+						background-size: cover;
+						border-radius: 3px;
+						box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+						margin: 20px 0 0 0;
+						@media screen and (min-width: $midwidth){
+							width: calc(50% - 30px);
+							float: left;
+							margin: 15px;
+						}
+						a {
+							text-align: center;
+							display: block;
+							padding: 10%;
+							color: white;
+							text-decoration: none;
+							h3 {
+								margin: 0;
+							}
+						}
 					}
 				}
 			}
 		}
-	}
-	>.row-1 {
-		>.col-1 {
+		>.row-1 {
+			border-bottom: 1px solid $color__usac-light-grey;
+			>.wrapper {
+				padding: 20px 0;
+				@include flexbox();
+				@include flexbox-justify(flex-start);
+				@include flexbox-align-items(stretch);
+				@include flexbox-align-content(stretch);
+				@include flexbox-direction(column);
+				@media screen and (min-width: $midwidth){
+					padding: 8% calc(4% + 15px);
+					@include flexbox-justify(space-between);
+					@include flexbox-align-items(center);
+					@include flexbox-align-content(center);
+					@include flexbox-direction(row);
+				}
+				>.col-1.copy {
+					font-size: 20px;
+					font-weight: 500;
+					line-height: 1.2;
+					margin: 0;
+					text-transform: none;
+					@media screen and (min-width: $midwidth){
+						float: left;
+						width: 50%;
+					}
 
-		}
-		>.col-2 {
-			a {
-
-			}
-		}
-	}
-	>.row-2 {
-		>.logo.col-1 {
-			a {
-				img {
-
+				}
+				>.col-2 {
+					margin: 20px 0 0 0;
+					text-align: center;
+					@media screen and (min-width: $midwidth){
+						float: left;
+						margin: 0;
+						width: 50%;
+						text-align: right;
+					}
+					a {
+						text-decoration: none;
+						color: $color__usac-button-blue;
+						font-size: 14px;
+						display: inline-block;
+						padding: 10px 60px;
+						border-width: 2px;
+						border-style: solid;
+						border-radius: 900px;
+					}
 				}
 			}
 		}
-		>.col-2, >.col-3, >.col-4 {
-			header {
-				h2 {
-					
-				}
-			}
-		}
-		>.col-5 {
+		>.row-2 {
+			padding: 20px 0;
 			>.row-1 {
-				img {
-
+				@include flexbox();
+				@include flexbox-justify(flex-start);
+				@include flexbox-align-items(stretch);
+				@include flexbox-align-content(stretch);
+				@include flexbox-direction(column);
+				@media screen and (min-width: $midwidth){
+					@include flexbox-justify(space-between);
+					@include flexbox-align-items(stretch);
+					@include flexbox-align-content(stretch);
+					@include flexbox-direction(row);
+				}
+				>.logo.col-1 {
+					@media screen and (min-width: $midwidth){
+						width: 10%;
+					}
+					a {
+						width: 90%;
+						margin: 0 auto;
+						display: block;
+						@media screen and (min-width: $midwidth){
+							width: 100%;
+							margin: 0;
+						}
+						img {
+							display: block;
+						}
+					}
+				}
+				>.col-2, >.col-3, >.col-4 {
+					margin: 20px 0 0 0;
+					text-align: center;
+					font-size: 14px;
+					@media screen and (min-width: $midwidth){
+						text-align: left;
+						margin: 0;
+					}
+					header {
+						margin: 0 0 5px 0;
+						h2 {
+							font-size: 14px;
+							font-weight: 500;
+							text-transform: uppercase;
+							margin: 0;
+						}
+					}
+					ul {
+						margin: 0;
+						padding: 0;
+						li {
+							list-style-type: none;
+							display: block;
+							a {
+								font-size: 12px;
+								color: $color__usac-text;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+				>.col-2 {
+					@media screen and (min-width: $midwidth){
+						margin: 0 25px 0 10px;
+					}
+				}
+				>.col-3 {
+					@media screen and (min-width: $midwidth){
+						margin: 0 25px;
+					}
+				}
+				>.col-4 {
+					@media screen and (min-width: $midwidth){
+						padding: 0 10px 0 0;
+						margin: 0 auto 0 25px;
+					}
+				}
+				>.col-5 {
+					@include flexbox();
+					@include flexbox-justify(stretch);
+					@include flexbox-align-items(stretch);
+					@include flexbox-align-content(stretch);
+					@include flexbox-direction(column);
+					margin: 20px 0 0 0;
+					@media screen and (min-width: $midwidth){
+						width: 30%;
+						margin: 0;
+					}
+					>.row-1 {
+						margin: 0 auto;
+						width: 80%;
+						@media screen and (min-width: $tinywidth){
+							width: 50%;
+						}
+						@media screen and (min-width: $midwidth){
+							width: 100%;
+							margin: 0;
+						}
+						img {
+							width: 50%;
+							float: left;
+							&:last-child {
+								padding: 0 0 0 30px;
+							}
+						}
+					}
+					>.row-2 {
+						margin: auto 0 0 0;
+						padding: 10px 0 0 0;
+						text-align: center;
+						@media screen and (min-width: $midwidth){
+							text-align: right;
+						}
+						a {
+							display: inline-block;
+							margin: 0 0 0 5px;
+							width: 30px;
+							height: 30px;
+							padding: 7px 0 0 0;
+							border-radius: 50%;
+							text-align: center;
+							text-decoration: none;
+							background-color: $color__usac-text;
+							i {
+								display: block;
+								color: white;
+								font-size: 18px;
+							}
+						}
+					}
 				}
 			}
 			>.row-2 {
-				a {
-					i {
-
-					}
-				}
+				padding: 20px 0 0 0;
+				font-size: 14px;
+				color: $color__usac-light-grey;
+				text-align: center;
 			}
 		}
 	}

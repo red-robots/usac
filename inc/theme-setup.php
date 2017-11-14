@@ -41,6 +41,10 @@ function acstarter_setup() {
     'quick-links' => esc_html__( 'Quick Links', 'acstarter' ),
     'resources' => esc_html__( 'Resources', 'acstarter' ),
     'company' => esc_html__( 'Company', 'acstarter' ),
+    'tools' => esc_html__( 'Tools', 'acstarter' ),
+    'track' => esc_html__( 'Track', 'acstarter' ),
+    'ship' => esc_html__( 'Ship', 'acstarter' ),
+    'services' => esc_html__( 'Services', 'acstarter' ),
   ) );
 
   /*
