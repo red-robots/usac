@@ -16,7 +16,9 @@
         <section class="row-1 clear-bottom">
             <?php if($video):?>
                 <div class="col-1">
-                    <?php echo $video;?>
+                    <div class="iframe-wrapper">
+                        <?php echo $video;?>
+                    </div><!--.iframe-wrapper-->
                 </div><!--.col-1-->
             <?php endif;
             if($copy):?>
@@ -44,7 +46,7 @@
         <section class="row-4">
             <?php foreach($services as $row):
                 if($row['image']||$row['copy']):?>
-                    <div class="service">
+                    <div class="service clear-bottom">
                         <?php if($row['image']):?>
                             <div class="col-1">
                                 <img src="<?php echo $row['image']['sizes']['thumbnail'];?>" alt="<?php echo $image['alt'];?>">

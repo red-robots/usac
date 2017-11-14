@@ -4,8 +4,8 @@
 	padding-left: 20px !important;
 	margin: 0 auto;
 	@media screen and (min-width: $midwidth){
-		padding-right: 18% !important;
-		padding-left: 18% !important;
+		padding-right: 13% !important;
+		padding-left: 13% !important;
 	}
 }
 .clear-bottom {
@@ -90,102 +90,104 @@
 		background: linear-gradient(180deg, white, lightgrey);
 		box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 		>.wrapper {
-			padding: 10px 0;
-			@include flexbox();
-			@include flexbox-justify(flex-start);
-			@include flexbox-align-items(stretch);
-			@include flexbox-align-content(stretch);
-			@include flexbox-direction(column);
-			@media screen and (min-width: $midwidth){
+			>.wrapper {
 				padding: 10px 0;
-				@include flexbox-justify(space-between);
-				@include flexbox-align-items(center);
-				@include flexbox-align-content(center);
-				@include flexbox-direction(row);
-			}
-			>.col-1 {
-				.select {
-					position: relative;
-					text-align: center;
-					background-color: white;
-					box-shadow: 2px 2px 5px rgba(0,0,0,0.4) inset;
-					border-radius: 3px;
-					padding: 5px;
-					font-size: 12px;
-					color: $color__text-main;
-					margin: 0;
-					&:hover {
-						.hidden {
-							display: block;
-						}
-					}
-					i {
-						color: $color__text-main;
-						padding-left: 40px;
-					}
-					.hidden {
+				@include flexbox();
+				@include flexbox-justify(flex-start);
+				@include flexbox-align-items(stretch);
+				@include flexbox-align-content(stretch);
+				@include flexbox-direction(column);
+				@media screen and (min-width: $midwidth){
+					padding: 10px 3.28%;
+					@include flexbox-justify(space-between);
+					@include flexbox-align-items(center);
+					@include flexbox-align-content(center);
+					@include flexbox-direction(row);
+				}
+				>.col-1 {
+					.select {
+						position: relative;
+						text-align: center;
 						background-color: white;
-						text-align: left;
-						display: none;
-						position: absolute;
-						top: 100%;
-						left: 0;
-						width: 100%;
+						box-shadow: 2px 2px 5px rgba(0,0,0,0.4) inset;
+						border-radius: 3px;
 						padding: 5px;
-						a {
-							display: block;
+						font-size: 12px;
+						color: $color__text-main;
+						margin: 0;
+						&:hover {
+							.hidden {
+								display: block;
+							}
+						}
+						i {
 							color: $color__text-main;
-							text-decoration: none;
+							padding-left: 40px;
+						}
+						.hidden {
+							background-color: white;
+							text-align: left;
+							display: none;
+							position: absolute;
+							top: 100%;
+							left: 0;
+							width: 100%;
+							padding: 5px;
+							a {
+								display: block;
+								color: $color__text-main;
+								text-decoration: none;
+							}
 						}
 					}
 				}
-			}
-			>.col-2 {
-				text-align: center;
-				a.telephone {
-					display: block;
-					text-transform: uppercase;
-					color: $color__usac-dark-blue;
-					text-decoration: none;
-					font-size: 14px;
-					font-weight: 700;
-					vertical-align: middle;
-					margin: 10px;
-					@media screen and (min-width: $midwidth){
-						display: inline-block;
-						margin: 0 10px;
+				>.col-2 {
+					text-align: center;
+					a.telephone {
+						display: block;
+						text-transform: uppercase;
+						color: $color__usac-dark-blue;
+						text-decoration: none;
+						font-size: 14px;
+						font-weight: 700;
+						vertical-align: middle;
+						margin: 10px;
+						@media screen and (min-width: $midwidth){
+							display: inline-block;
+							margin: 0 10px;
+						}
 					}
-				}
-				a.quote {
-					display: block;
-					vertical-align: middle;
-					background-color: $color__usac-red;
-					box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-					color: white;
-					text-decoration: none;
-					padding: 5px 20px;
-					border-radius: 5px;
-					font-size: 12px;
-					margin: 10px;
-					text-transform: uppercase;
-					@media screen and (min-width: $midwidth){
-						display: inline-block;
-						margin: 0 10px;
+					a.quote {
+						display: block;
+						vertical-align: middle;
+						background-color: $color__usac-red;
+						box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+						color: white;
+						text-decoration: none;
+						padding: 5px 20px;
+						border-radius: 5px;
+						font-size: 12px;
+						margin: 10px;
+						text-transform: uppercase;
+						@media screen and (min-width: $midwidth){
+							display: inline-block;
+							margin: 0 10px;
+						}
 					}
-				}
-				a.account {
-					display: block;
-					vertical-align: middle;
-					text-decoration: none;
-					font-size: 14px;
-					margin: 10px 0 0 10px;
-					color: $color__usac-grey;
-					@media screen and (min-width: $midwidth){
-						display: inline-block;
-						margin: 0 0 0 10px;
-					}
-					i {
-						margin: 0 5px 0 0;
+					a.account {
+						display: block;
+						vertical-align: middle;
+						text-decoration: none;
+						font-size: 14px;
+						margin: 10px 0 0 10px;
+						color: $color__usac-grey;
+						@media screen and (min-width: $midwidth){
+							display: inline-block;
+							margin: 0 0 0 10px;
+						}
+						i {
+							margin: 0 5px 0 0;
+						}
 					}
 				}
 			}
@@ -216,143 +218,145 @@
 			opacity: 0.5;
 		}
 		>.wrapper {
-			padding: 5px 0 50px 0;
-			border-bottom: 1px solid $color__usac-grey;
-			@media screen and (min-width: $midwidth){
+			>.wrapper {
 				padding: 5px 0 50px 0;
-			}
-			>.row-1 {
-				padding: 0;
-				@include flexbox();
-				@include flexbox-justify(flex-start);
-				@include flexbox-align-items(stretch);
-				@include flexbox-align-content(stretch);
-				@include flexbox-direction(column);
+				border-bottom: 1px solid $color__usac-grey;
 				@media screen and (min-width: $midwidth){
-					@include flexbox-justify(space-between);
-					@include flexbox-align-items(center);
-					@include flexbox-align-content(center);
-					@include flexbox-direction(row);
+					padding: 5px 3.28% 50px 3.28%;
 				}
-				h1 {
-					margin: 0 auto;
-					display: block;
-					width: 90%;
+				>.row-1 {
+					padding: 0;
+					@include flexbox();
+					@include flexbox-justify(flex-start);
+					@include flexbox-align-items(stretch);
+					@include flexbox-align-content(stretch);
+					@include flexbox-direction(column);
 					@media screen and (min-width: $midwidth){
-						margin: 0;
-						width: auto;
+						@include flexbox-justify(space-between);
+						@include flexbox-align-items(center);
+						@include flexbox-align-content(center);
+						@include flexbox-direction(row);
 					}
-					a {
+					h1 {
+						margin: 0 auto;
 						display: block;
-						img {
-							display: block;
-							width: 100%;
-						}
-					}
-				}
-				nav#site-navigation {
-					margin: 10px 0 0 0;
-					text-align: center;
-					@media screen and (min-width: $midwidth){
-						margin: 0;
-					}
-					&.toggled {
-						.menu-primary-container {
-							display: block;
-						}
-					}
-					button {
-						display: inline-block;
-						box-shadow: none;
-						text-shadow: none;
-						color: $color__usac-dark-blue;
-						border: 3px solid $color__usac-dark-blue;
-						padding: 10px 15px;
-						background: none;
+						width: 90%;
 						@media screen and (min-width: $midwidth){
-							display: none;
-						}
-					}
-					.menu-primary-container {
-						display: none;
-						@media screen and (min-width: $midwidth){
-							display: block;
-						}
-						ul {
 							margin: 0;
-							padding: 0;
-							li {
-								margin: 10px 0;
+							width: auto;
+						}
+						a {
+							display: block;
+							img {
 								display: block;
-								@media screen and (min-width: $midwidth){
-									margin: 0 35px;
-									display: inline-block;
-								}
-								&:last-child {
-									margin-right: 0;
-								}
-								a {
-									color: black;
-									text-decoration: none;
-								}
-								.sub-menu {
-									display: none;
+								width: 100%;
+							}
+						}
+					}
+					nav#site-navigation {
+						margin: 10px 0 0 0;
+						text-align: center;
+						@media screen and (min-width: $midwidth){
+							margin: 0;
+						}
+						&.toggled {
+							.menu-primary-container {
+								display: block;
+							}
+						}
+						button {
+							display: inline-block;
+							box-shadow: none;
+							text-shadow: none;
+							color: $color__usac-dark-blue;
+							border: 3px solid $color__usac-dark-blue;
+							padding: 10px 15px;
+							background: none;
+							@media screen and (min-width: $midwidth){
+								display: none;
+							}
+						}
+						.menu-primary-container {
+							display: none;
+							@media screen and (min-width: $midwidth){
+								display: block;
+							}
+							ul {
+								margin: 0;
+								padding: 0;
+								li {
+									margin: 10px 0;
+									display: block;
+									@media screen and (min-width: $midwidth){
+										margin: 0 35px;
+										display: inline-block;
+									}
+									&:last-child {
+										margin-right: 0;
+									}
+									a {
+										color: black;
+										text-decoration: none;
+									}
+									.sub-menu {
+										display: none;
+									}
 								}
 							}
 						}
 					}
 				}
-			}
-			>.row-2 {
-				margin: 40px 0 0 0;
-				text-align: center;
-				color: $color__usac-dark-blue;
-				@media screen and (min-width: $midwidth){
-					width: 60%;
-					margin: 40px auto 0 auto;
-				}
-				> h1 {
-					margin: 20px 0;
-					text-transform: uppercase;
+				>.row-2 {
+					margin: 40px 0 0 0;
+					text-align: center;
+					color: $color__usac-dark-blue;
 					@media screen and (min-width: $midwidth){
-						margin: 18% 0;
+						width: 60%;
+						margin: 40px auto 0 auto;
 					}
-				}
-				.copy {
-					margin: 0 0 40px 0;
-					color: inherit;
-					h1 {
-						color: inherit;
-						font-size: 25px;
+					> h1 {
+						margin: 20px 0;
+						text-transform: uppercase;
 						@media screen and (min-width: $midwidth){
-							font-size: 35px;
+							margin: 18% 0;
 						}
 					}
-					p {
-						width: 80%;
-						margin: 0 auto;
+					.copy {
+						margin: 0 0 40px 0;
+						color: inherit;
+						h1 {
+							color: inherit;
+							font-size: 25px;
+							@media screen and (min-width: $midwidth){
+								font-size: 35px;
+							}
+						}
+						p {
+							width: 80%;
+							margin: 0 auto;
+						}
 					}
-				}
-				a.quote {
-					color: inherit;
-					text-transform: uppercase;
-					border: 3px solid $color__usac-dark-blue;
-					text-decoration: none;
-					padding: 10px 15px;
-					font-size: 14px;
-					display: inline-block;
-					margin: 0 0 10px 0;
-				}
-				.copy.call {
-					color: inherit;
-					margin: 0;
-				}
-				a.telephone {
-					color: inherit;
-					text-decoration: none;
-					text-transform: uppercase;
-					font-weight: 700;
+					a.quote {
+						color: inherit;
+						text-transform: uppercase;
+						border: 3px solid $color__usac-dark-blue;
+						text-decoration: none;
+						padding: 10px 15px;
+						font-size: 14px;
+						display: inline-block;
+						margin: 0 0 10px 0;
+					}
+					.copy.call {
+						color: inherit;
+						margin: 0;
+					}
+					a.telephone {
+						color: inherit;
+						text-decoration: none;
+						text-transform: uppercase;
+						font-weight: 700;
 
+					}
 				}
 			}
 		}
@@ -362,42 +366,45 @@
 		background-repeat: no-repeat;
 		background-position: bottom center;
 		>.wrapper {
-			padding: 40px 0 5% 0;
-			text-align: center;
-			@media screen and (min-width: $midwidth){
-				@include flexbox-wrap(nowrap);
-				@include flexbox();
-				@include flexbox-justify(space-between);
-				@include flexbox-align-items(center);
-				@include flexbox-align-content(center);
-				@include flexbox-direction(row);
-				&:after {
-					display: none;
-				}
-			}
-			.icon {
-				display: inline-block;
-				width: 45%;
-				padding: 10px;
-				@media screen and (min-width: $tinywidth){
-					
-				}
+			>.wrapper {
+				padding: 40px 0 5% 0;
+				text-align: center;
 				@media screen and (min-width: $midwidth){
-					@include flexbox-flex(0,1,auto);
-					width: auto;
-					padding: 0 10px;
-				}
-				a {
-					display: block;
-					color: inherit;
-					text-decoration: none;
-					img {
-							width: auto;
-							display: inline-block;
+					@include flexbox-wrap(nowrap);
+					@include flexbox();
+					@include flexbox-justify(space-between);
+					@include flexbox-align-items(center);
+					@include flexbox-align-content(center);
+					@include flexbox-direction(row);
+					padding: 40px 3.28% 19% 3.28%;
+					&:after {
+						display: none;
 					}
-					.text {
-						text-align: center;
+				}
+				.icon {
+					display: inline-block;
+					width: 45%;
+					padding: 10px;
+					@media screen and (min-width: $tinywidth){
+						
+					}
+					@media screen and (min-width: $midwidth){
+						@include flexbox-flex(0,1,auto);
+						width: auto;
+						padding: 0 10px;
+					}
+					a {
+						display: block;
+						color: inherit;
+						text-decoration: none;
+						img {
+								width: auto;
+								display: inline-block;
+						}
+						.text {
+							text-align: center;
 
+						}
 					}
 				}
 			}

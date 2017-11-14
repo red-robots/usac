@@ -34,18 +34,20 @@
 				echo 'style="background-image: url('.$header_background['url'].');"';
 			endif;?>></div><!--.background-image-->
 			<div class="wrapper cap">
-				<div class="row-1">
-					<div class="logo">
-						<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
-					</div>
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'acstarter' ); ?></button>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</nav><!-- #site-navigation -->
-				</div><!--.row-1-->
-				<header class="row-2">
-					<h1><?php the_title();?></h1>
-				</header><!--.row-2-->
+				<div class="wrapper">
+					<div class="row-1">
+						<div class="logo">
+							<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
+						</div>
+						<nav id="site-navigation" class="main-navigation" role="navigation">
+							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'acstarter' ); ?></button>
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						</nav><!-- #site-navigation -->
+					</div><!--.row-1-->
+					<header class="row-2">
+						<h1><?php the_title();?></h1>
+					</header><!--.row-2-->
+				</div><!--.wrapper -->
 			</div><!--.wrapper .cap-->
 		</div><!-- row-2 -->
 		<?php get_template_part("template-parts/content","bottom-bar");?>
