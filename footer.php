@@ -23,7 +23,7 @@
 					$footer_row_1_link = get_field("footer_row_1_link","option");
 					$footer_row_1_link_text = get_field("footer_row_1_text","option");?>
 					<?php if($footer_row_1_copy):?>
-						<div class="col-1">
+						<div class="col-1 copy">
 							<?php echo $footer_row_1_copy;?>
 						</div><!--.col-1-->
 					<?php endif;?>
