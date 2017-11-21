@@ -54,7 +54,7 @@
                         <?php endif;
                         if($row['copy']):?>
                             <div class="col-2 copy">
-                                <?php echo $copy;?>
+                                <?php echo $row['copy'];?>
                             </div><!--.col-2-->
                         <?php endif;?>    
                     </div><!--.service-->        
