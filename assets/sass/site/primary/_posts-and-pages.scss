@@ -198,7 +198,7 @@
                     display: none;
                     margin: 0;
                     @media screen and (min-width: $midwidth){
-                        display: block;
+                        @include flexbox();
                     }
                     .col-1, .col-2 {
                         background-color: $color__usac-pale-blue;
