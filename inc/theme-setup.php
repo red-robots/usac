@@ -45,6 +45,7 @@ function acstarter_setup() {
     'track' => esc_html__( 'Track', 'acstarter' ),
     'ship' => esc_html__( 'Ship', 'acstarter' ),
     'services' => esc_html__( 'Services', 'acstarter' ),
+    'default' => esc_html__( 'Default', 'acstarter' ),
   ) );
 
   /*

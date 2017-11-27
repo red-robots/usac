@@ -12,7 +12,7 @@ global $template;
 <article id="post-<?php the_ID(); ?>" <?php post_class("template-page"); ?>>
     <?php $content_title = get_field("content_title");
     if($content_title):?>
-        <header class="row-1">
+        <header class="row-1 clear-bottom">
             <div class="col-1 js-blocks">
             </div><!--.col-1-->
             <div class="col-2 js-blocks">
@@ -20,7 +20,7 @@ global $template;
             </div><!--.col-2-->
         </header>
     <?php endif;?>
-    <div class="row-2">
+    <div class="row-2 clear-bottom">
         <aside class="col-1" id="secondary" role="complementary">
             <?php if($template):?>
                 <div class="menu">
@@ -36,6 +36,9 @@ global $template;
                         break;
                         case "services":
                             wp_nav_menu( array( 'theme_location' => 'services'));
+                        break;
+                        default:
+                            wp_nav_menu( array( 'theme_location' => 'default'));
                         break;
                     endswitch;?>
                 </div><!--.menu-->
@@ -64,19 +67,19 @@ global $template;
                                 echo $services_col_2_title;
                             endif;?>
                         </div><!--.col-2-->
-                        <?php foreach($services as $row):
-                            if($row['col_1']&&$row['col_2']):?>
-                                <div class="row">
-                                    <div class="col-1">
-                                        <?php echo $row['col_1'];?>
-                                    </div><!--.col-1-->
-                                    <div class="col-2">
-                                        <?php echo $row['col_2'];?>
-                                    </div><!--.col-2-->
-                                </div><!--.row-->
-                            <?php endif;
-                        endforeach;?>
                     </div><!--.row-1-->
+                    <?php foreach($services as $row):
+                        if($row['col_1']&&$row['col_2']):?>
+                            <div class="row">
+                                <div class="col-1">
+                                    <?php echo $row['col_1'];?>
+                                </div><!--.col-1-->
+                                <div class="col-2 copy">
+                                    <?php echo $row['col_2'];?>
+                                </div><!--.col-2-->
+                            </div><!--.row-->
+                        <?php endif;
+                    endforeach;?>
                 </div><!--.services-->
             <?php endif;?>
         </section><!--.col-2-->

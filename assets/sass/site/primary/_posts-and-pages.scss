@@ -123,37 +123,107 @@
     }
 }
 .template-page, .template-sitemap, .error-404 {
+    @media screen and (min-width: $midwidth){
+        margin: -6% 0 0 0;
+    }
     >.row-1 {
+        margin: 0 0 5% 0;
         >.col-1 {
+            @media screen and (min-width: $midwidth){
+                float: left;
+                width: 40%;
+            }
 
         }
         >.col-2 {
-
+            @media screen and (min-width: $midwidth){
+                float: left;
+                width: 60%;
+            }
+            h1 {
+                margin: 0;
+                font-size: 35px;
+            }
         }
     }
     >.row-2 {
         >aside.col-1 {
+            @media screen and (min-width: $midwidth){
+                float: left;
+                width: 40%;
+                padding: 0 10% 0 0;
+            }
             .menu {
-
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                        margin: 10px 0;
+                        list-style-type: none;
+                        a {
+                            text-decoration: none;
+                            font-size: 16px;
+                            color: $color__text-main;
+                            @media screen and (min-width: $midwidth){
+                                font-size: 20px;
+                            }
+                            &:hover {
+                                color: $color__usac-light-blue;
+                            }
+                        }
+                        .sub-menu {
+                            padding: 0 0 0 20px;
+                        }
+                    }
+                }
             }
             .widget {
 
             }
         }
         >.col-2 {
+            @media screen and (min-width: $midwidth){
+                float: left;
+                width: 60%;
+            }
             .copy {
 
             }
             .services {
+                margin: 20px 0 0 0;
+                @media screen and (min-width: $midwidth){
+                    margin: 50px 0 0 0;
+                }
                 >.row-1 {
-
+                    margin: 0;
+                    .col-1, .col-2 {
+                        background-color: $color__usac-pale-blue;
+                        padding: 10px;
+                    }
                 }
                 >.row {
+                    margin: 40px 0 0 0;
+					@include flexbox();
+					@include flexbox-justify(flex-start);
+					@include flexbox-align-items(stretch);
+					@include flexbox-align-content(stretch);
+					@include flexbox-direction(column);
+					@media screen and (min-width: $midwidth){
+						@include flexbox-justify(space-between);
+						@include flexbox-align-items(center);
+						@include flexbox-align-content(center);
+						@include flexbox-direction(row);
+                    }
+                    &:nth-child(2){
+                        margin: 20px 0 0 0;
+                    }
                     >.col-1 {
+                        min-width: 30%;
+                        margin-right: 20px;
 
                     }
                     >.col-2 {
-
+                        @include flexbox-flex(1,1,auto);
                     }
                 }
             }
