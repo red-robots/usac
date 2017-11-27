@@ -286,10 +286,16 @@
 								padding: 0;
 								li {
 									margin: 10px 0;
+									position: relative;
 									display: block;
 									@media screen and (min-width: $midwidth){
 										margin: 0 35px;
 										display: inline-block;
+									}
+									&:hover {
+										.sub-menu {
+											display: block;
+										}
 									}
 									&:last-child {
 										margin-right: 0;
@@ -299,7 +305,24 @@
 										text-decoration: none;
 									}
 									.sub-menu {
-										display: none;
+										@media screen and (min-width: $midwidth){
+											width: 200px;
+											background-color: white;
+											position: absolute;
+											display: none;
+											top: 100%;
+											left: 50%;
+											padding: 10px;
+											@include translatexy(-50%,0%);
+										}
+										li {
+											@media screen and (min-width: $midwidth){
+												margin: 5px 0;
+											}
+											a {
+												font-size: 12px;
+											}
+										}
 									}
 								}
 							}
@@ -373,8 +396,8 @@
 					@include flexbox-wrap(nowrap);
 					@include flexbox();
 					@include flexbox-justify(space-between);
-					@include flexbox-align-items(center);
-					@include flexbox-align-content(center);
+					@include flexbox-align-items(flex-start);
+					@include flexbox-align-content(flex-start);
 					@include flexbox-direction(row);
 					padding: 40px 3.28% 19% 3.28%;
 					&:after {
@@ -391,6 +414,7 @@
 					@media screen and (min-width: $midwidth){
 						@include flexbox-flex(0,1,auto);
 						width: auto;
+						max-width: 14%;
 						padding: 0 10px;
 					}
 					a {
@@ -415,7 +439,7 @@
 }
 
 #colophon {
-	background-size: 100% 100%;
+	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat;
 	padding: 10% 0 0 0;
