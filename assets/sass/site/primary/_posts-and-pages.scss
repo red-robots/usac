@@ -194,21 +194,26 @@
                 @media screen and (min-width: $midwidth){
                     margin: 50px 0 0 0;
                 }
-                >.row-1 {
+                >.row-1.row {
+                    display: none;
                     margin: 0;
+                    @media screen and (min-width: $midwidth){
+                        display: block;
+                    }
                     .col-1, .col-2 {
                         background-color: $color__usac-pale-blue;
                         padding: 10px;
                     }
                 }
                 >.row {
-                    margin: 40px 0 0 0;
+                    margin: 20px 0 0 0;
 					@include flexbox();
 					@include flexbox-justify(flex-start);
 					@include flexbox-align-items(stretch);
 					@include flexbox-align-content(stretch);
 					@include flexbox-direction(column);
 					@media screen and (min-width: $midwidth){
+                        margin: 40px 0 0 0;
 						@include flexbox-justify(space-between);
 						@include flexbox-align-items(center);
 						@include flexbox-align-content(center);
@@ -218,12 +223,18 @@
                         margin: 20px 0 0 0;
                     }
                     >.col-1 {
-                        min-width: 30%;
-                        margin-right: 20px;
+                        @media screen and (min-width: $midwidth){
+                            min-width: 30%;
+                            margin-right: 20px;
+                        }
 
                     }
                     >.col-2 {
-                        @include flexbox-flex(1,1,auto);
+                        margin: 10px 0 0 0;
+                        @media screen and (min-width: $midwidth){
+                            @include flexbox-flex(1,1,auto);
+                            margin: 0;
+                        }
                     }
                 }
             }
