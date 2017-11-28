@@ -316,6 +316,7 @@
 											@include translatexy(-50%,0%);
 										}
 										li {
+											display: block;
 											@media screen and (min-width: $midwidth){
 												margin: 5px 0;
 											}
