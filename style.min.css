@@ -892,9 +892,11 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-page>.row-2>.col-2 .copy.services,.template-sitemap>.row-2>.col-2 .copy.services,.error-404>.row-2>.col-2 .copy.services{margin:0}
 .template-page>.row-2>.col-2 header,.template-sitemap>.row-2>.col-2 header,.error-404>.row-2>.col-2 header{margin:20px 0}
 @media screen and (min-width:900px){.template-page>.row-2>.col-2 header,.template-sitemap>.row-2>.col-2 header,.error-404>.row-2>.col-2 header{margin:10% 0 20px 0}
-}.template-page>.row-2>.col-2 header h2,.template-sitemap>.row-2>.col-2 header h2,.error-404>.row-2>.col-2 header h2{margin:0;font-size:35px;text-align:center;line-height:1.2;font-weight:500}
-.template-page>.row-2>.col-2 header h3,.template-sitemap>.row-2>.col-2 header h3,.error-404>.row-2>.col-2 header h3{line-height:1.2;font-size:12px;text-align:center;font-weight:500;margin:0;font-style:italic}
-.template-page>.row-2>.col-2 .services,.template-sitemap>.row-2>.col-2 .services,.error-404>.row-2>.col-2 .services{margin:20px 0 0 0}
+}.template-page>.row-2>.col-2 header h2,.template-sitemap>.row-2>.col-2 header h2,.error-404>.row-2>.col-2 header h2{margin:0;font-size:35px;line-height:1.2;font-weight:500}
+@media screen and (min-width:900px){.template-page>.row-2>.col-2 header h2,.template-sitemap>.row-2>.col-2 header h2,.error-404>.row-2>.col-2 header h2{text-align:center}
+}.template-page>.row-2>.col-2 header h3,.template-sitemap>.row-2>.col-2 header h3,.error-404>.row-2>.col-2 header h3{line-height:1.2;font-size:12px;font-weight:500;margin:0;font-style:italic}
+@media screen and (min-width:900px){.template-page>.row-2>.col-2 header h3,.template-sitemap>.row-2>.col-2 header h3,.error-404>.row-2>.col-2 header h3{text-align:center}
+}.template-page>.row-2>.col-2 .services,.template-sitemap>.row-2>.col-2 .services,.error-404>.row-2>.col-2 .services{margin:20px 0 0 0}
 @media screen and (min-width:900px){.template-page>.row-2>.col-2 .services,.template-sitemap>.row-2>.col-2 .services,.error-404>.row-2>.col-2 .services{margin:50px 0 0 0}
 }.template-page>.row-2>.col-2 .services>.row-1.row,.template-sitemap>.row-2>.col-2 .services>.row-1.row,.error-404>.row-2>.col-2 .services>.row-1.row{display:none;margin:0}
 @media screen and (min-width:900px){.template-page>.row-2>.col-2 .services>.row-1.row,.template-sitemap>.row-2>.col-2 .services>.row-1.row,.error-404>.row-2>.col-2 .services>.row-1.row{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex}

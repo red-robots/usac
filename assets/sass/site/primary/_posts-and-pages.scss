@@ -200,17 +200,21 @@
                 h2 {
                     margin: 0;
                     font-size: 35px;
-                    text-align: center;
                     line-height: 1.2;
                     font-weight: 500;
+                    @media screen and (min-width: $midwidth){
+                        text-align: center;
+                    }
                 }
                 h3 {
                     line-height: 1.2;
                     font-size: 12px;
-                    text-align: center;
                     font-weight: 500;
                     margin: 0;
                     font-style: italic;
+                    @media screen and (min-width: $midwidth){
+                        text-align: center;
+                    }
                 }
             }
             .services {
