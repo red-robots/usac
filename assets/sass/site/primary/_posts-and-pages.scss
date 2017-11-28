@@ -142,6 +142,7 @@
             }
             h1 {
                 margin: 0;
+                font-weight: 500;
                 font-size: 35px;
             }
         }
@@ -187,7 +188,30 @@
                 width: 60%;
             }
             .copy {
-
+                &.services {
+                    margin: 0;
+                }
+            }
+            header {
+                margin: 20px 0;
+                @media screen and (min-width: $midwidth){
+                    margin: 10% 0 20px 0;
+                }
+                h2 {
+                    margin: 0;
+                    font-size: 35px;
+                    text-align: center;
+                    line-height: 1.2;
+                    font-weight: 500;
+                }
+                h3 {
+                    line-height: 1.2;
+                    font-size: 12px;
+                    text-align: center;
+                    font-weight: 500;
+                    margin: 0;
+                    font-style: italic;
+                }
             }
             .services {
                 margin: 20px 0 0 0;

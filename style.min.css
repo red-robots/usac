@@ -880,7 +880,7 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-page>.row-1,.template-sitemap>.row-1,.error-404>.row-1{margin:0 0 5% 0}
 @media screen and (min-width:900px){.template-page>.row-1>.col-1,.template-sitemap>.row-1>.col-1,.error-404>.row-1>.col-1{float:left;width:40%}
 }@media screen and (min-width:900px){.template-page>.row-1>.col-2,.template-sitemap>.row-1>.col-2,.error-404>.row-1>.col-2{float:left;width:60%}
-}.template-page>.row-1>.col-2 h1,.template-sitemap>.row-1>.col-2 h1,.error-404>.row-1>.col-2 h1{margin:0;font-size:35px}
+}.template-page>.row-1>.col-2 h1,.template-sitemap>.row-1>.col-2 h1,.error-404>.row-1>.col-2 h1{margin:0;font-weight:500;font-size:35px}
 @media screen and (min-width:900px){.template-page>.row-2>aside.col-1,.template-sitemap>.row-2>aside.col-1,.error-404>.row-2>aside.col-1{float:left;width:40%;padding:0 10% 0 0}
 }.template-page>.row-2>aside.col-1 .menu ul,.template-sitemap>.row-2>aside.col-1 .menu ul,.error-404>.row-2>aside.col-1 .menu ul{margin:0;padding:0}
 .template-page>.row-2>aside.col-1 .menu ul li,.template-sitemap>.row-2>aside.col-1 .menu ul li,.error-404>.row-2>aside.col-1 .menu ul li{margin:10px 0;list-style-type:none}
@@ -889,7 +889,12 @@ html[xmlns] .flexslider .slides{display:block}
 }.template-page>.row-2>aside.col-1 .menu ul li a:hover,.template-sitemap>.row-2>aside.col-1 .menu ul li a:hover,.error-404>.row-2>aside.col-1 .menu ul li a:hover{color:#00e4f7}
 .template-page>.row-2>aside.col-1 .menu ul li .sub-menu,.template-sitemap>.row-2>aside.col-1 .menu ul li .sub-menu,.error-404>.row-2>aside.col-1 .menu ul li .sub-menu{padding:0 0 0 20px}
 @media screen and (min-width:900px){.template-page>.row-2>.col-2,.template-sitemap>.row-2>.col-2,.error-404>.row-2>.col-2{float:left;width:60%}
-}.template-page>.row-2>.col-2 .services,.template-sitemap>.row-2>.col-2 .services,.error-404>.row-2>.col-2 .services{margin:20px 0 0 0}
+}.template-page>.row-2>.col-2 .copy.services,.template-sitemap>.row-2>.col-2 .copy.services,.error-404>.row-2>.col-2 .copy.services{margin:0}
+.template-page>.row-2>.col-2 header,.template-sitemap>.row-2>.col-2 header,.error-404>.row-2>.col-2 header{margin:20px 0}
+@media screen and (min-width:900px){.template-page>.row-2>.col-2 header,.template-sitemap>.row-2>.col-2 header,.error-404>.row-2>.col-2 header{margin:10% 0 20px 0}
+}.template-page>.row-2>.col-2 header h2,.template-sitemap>.row-2>.col-2 header h2,.error-404>.row-2>.col-2 header h2{margin:0;font-size:35px;text-align:center;line-height:1.2;font-weight:500}
+.template-page>.row-2>.col-2 header h3,.template-sitemap>.row-2>.col-2 header h3,.error-404>.row-2>.col-2 header h3{line-height:1.2;font-size:12px;text-align:center;font-weight:500;margin:0;font-style:italic}
+.template-page>.row-2>.col-2 .services,.template-sitemap>.row-2>.col-2 .services,.error-404>.row-2>.col-2 .services{margin:20px 0 0 0}
 @media screen and (min-width:900px){.template-page>.row-2>.col-2 .services,.template-sitemap>.row-2>.col-2 .services,.error-404>.row-2>.col-2 .services{margin:50px 0 0 0}
 }.template-page>.row-2>.col-2 .services>.row-1.row,.template-sitemap>.row-2>.col-2 .services>.row-1.row,.error-404>.row-2>.col-2 .services>.row-1.row{display:none;margin:0}
 @media screen and (min-width:900px){.template-page>.row-2>.col-2 .services>.row-1.row,.template-sitemap>.row-2>.col-2 .services>.row-1.row,.error-404>.row-2>.col-2 .services>.row-1.row{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex}

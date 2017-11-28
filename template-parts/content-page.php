@@ -51,7 +51,25 @@ global $template;
             <div class="copy">
                 <?php the_content();?>
             </div><!--.copy-->
-            <?php $services_col_1_title = get_field("services_col_1_title");
+            <?php $services_title = get_field("services_title");
+            $services_sub_title = get_field("services_sub_title");
+            $services_copy = get_field("services_copy");?>
+            <?php if($services_title||$services_sub_title):?>
+                <header>
+                    <?php if($services_title):?>
+                        <h2><?php echo $services_title;?></h2>
+                    <?php endif;
+                    if($services_sub_title):?>
+                        <h3><?php echo $services_sub_title;?></h3>
+                    <?php endif;?>
+                </header>
+            <?php endif;
+            if($services_copy):?>
+                <div class="copy services">
+                    <?php echo $services_copy;?>
+                </div><!--.copy-->
+            <?php endif;
+            $services_col_1_title = get_field("services_col_1_title");
             $services_col_2_title = get_field("services_col_2_title");
             $services = get_field("services");
             if($services):?>
