@@ -28,7 +28,7 @@
 						<div class="wrapper clear-bottom">
 							<?php foreach($delivery_methods as $row):?>
 								<?php if($row['image']&&$row['title']&&$row['link']):?>
-									<div class="method" 
+									<div class="method js-blocks" 
 									<?php echo 'style="background-image: url('.$row['image']['sizes']['large'].');"';?>>
 										<a href="<?php echo $row['link'];?>">
 											<h3><?php echo $row['title'];?></h3>

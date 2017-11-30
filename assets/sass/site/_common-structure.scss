@@ -132,11 +132,15 @@
 							top: 100%;
 							left: 0;
 							width: 100%;
+							z-index: 10;
 							padding: 5px;
 							a {
 								display: block;
 								color: $color__text-main;
 								text-decoration: none;
+								&:hover {
+									color: $color__usac-dark-blue;
+								}
 							}
 						}
 					}
@@ -156,6 +160,9 @@
 							display: inline-block;
 							margin: 0 10px;
 						}
+						&:hover {
+							color: $color__usac-button-blue;
+						}
 					}
 					a.quote {
 						display: block;
@@ -173,6 +180,10 @@
 							display: inline-block;
 							margin: 0 10px;
 						}
+						&:hover{
+							background-color: white;
+							color: $color__usac-red;
+						}
 					}
 					a.account {
 						display: block;
@@ -184,6 +195,9 @@
 						@media screen and (min-width: $midwidth){
 							display: inline-block;
 							margin: 0 0 0 10px;
+						}
+						&:hover {
+							color: $color__usac-dark-blue;
 						}
 						i {
 							margin: 0 5px 0 0;
@@ -303,25 +317,48 @@
 									a {
 										color: black;
 										text-decoration: none;
+										&:hover{
+											color: white;
+										}
 									}
 									.sub-menu {
 										@media screen and (min-width: $midwidth){
-											width: 200px;
+											width: 250px;
 											background-color: white;
+											border-top: 5px solid $color__usac-icon-blue;
 											position: absolute;
 											display: none;
 											top: 100%;
 											left: 50%;
-											padding: 10px;
-											@include translatexy(-50%,0%);
+											padding: 20px 25px 15px 25px;
+											box-shadow: 1px 1px 10px $color__usac-dark-grey;
+											@include translatexy(-20%,0%);
+											&:before {
+												position: absolute;
+												content: "";
+												width: 15px;
+												top: 0;
+												left: 20px;
+												border-top: 12px solid $color__usac-icon-blue;
+												border-left: 15px solid transparent;
+												border-right: 15px solid transparent;
+											}
+											
 										}
 										li {
+											text-align: center;
 											display: block;
+											text-transform: capitalize;
 											@media screen and (min-width: $midwidth){
-												margin: 5px 0;
+												margin: 10px 0;
+												text-align: left;
+												line-height: 1.2;
 											}
 											a {
-												font-size: 12px;
+												font-size: 14px;
+												&:hover {
+													color: $color__usac-dark-blue;
+												}
 											}
 										}
 									}
@@ -418,6 +455,15 @@
 						max-width: 14%;
 						padding: 0 10px;
 					}
+					&:hover {
+						a {
+							img {
+								transform: scale(1.2);
+								transition: all 0.2s;
+								-webkit-transition: all 0.2s;
+							}
+						}
+					}
 					a {
 						display: block;
 						color: inherit;
@@ -465,7 +511,7 @@
 					}
 					.method {
 						background-position: center;
-						background-size: cover;
+						background-size: 100%;
 						border-radius: 3px;
 						box-shadow: 0 2px 20px rgba(0,0,0,0.4);
 						margin: 20px 0 0 0;
@@ -473,6 +519,11 @@
 							width: calc(50% - 30px);
 							float: left;
 							margin: 15px;
+						}
+						&:hover {
+							background-size: 110% auto;
+							transition: all 0.2s;
+							-webkit-transition: all 0.2s;
 						}
 						a {
 							text-align: center;
@@ -535,6 +586,10 @@
 						border-width: 2px;
 						border-style: solid;
 						border-radius: 900px;
+						&:hover {
+							background-color: $color__usac-button-blue;
+							color: white;
+						}
 					}
 				}
 			}
@@ -597,6 +652,9 @@
 								font-size: 12px;
 								color: $color__usac-text;
 								text-decoration: none;
+								&:hover {
+									color: $color__usac-dark-blue;
+								}
 							}
 						}
 					}
@@ -663,6 +721,9 @@
 							text-align: center;
 							text-decoration: none;
 							background-color: $color__usac-text;
+							&:hover {
+								background-color: $color__usac-dark-blue;
+							}
 							i {
 								display: block;
 								color: white;
