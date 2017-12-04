@@ -129,6 +129,7 @@ document.write('<DIV ID="fade1"><h1>A</h1><h2>Alaska</h2><p>Anchorage, Fairbanks
     </div>
     <!-- Wrapper End -->
    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/custom/tooltip.js"></script>
+   <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/custom/temp.js"></script>
     <map name="m_00000001" id="m_00000001">
 <area shape="poly" coords="135,89,89,74,44,98,44,49,68,20,81,15,108,27" href="#" onMouseover="ddrivetip('<strong>Alaska:</strong> Anchorage, Fairbanks, Ketchikan, Juneau', 200)"; onMouseout="hideddrivetip()" target="None" />
 

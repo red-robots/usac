@@ -1,15 +1,13 @@
 <?php
 /**
- * Template Name: Ship
+ * Template Name: Top Level
  */
 
-global $template;
-$template = 'ship';
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<div class="wrapper cap">
-				<?php get_template_part( 'template-parts/content', 'page' );?>
+				<?php get_template_part( 'template-parts/content', 'top-level' );?>
 			</div><!--.wrapper .cap-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
