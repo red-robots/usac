@@ -855,9 +855,8 @@ html[xmlns] .flexslider .slides{display:block}
 }#colophon>.wrapper>.row-2>.row-1>.col-5>.row-1{margin:0 auto;width:80%}
 @media screen and (min-width:350px){#colophon>.wrapper>.row-2>.row-1>.col-5>.row-1{width:50%}
 }@media screen and (min-width:900px){#colophon>.wrapper>.row-2>.row-1>.col-5>.row-1{width:100%;margin:0}
-}#colophon>.wrapper>.row-2>.row-1>.col-5>.row-1 img{width:50%;float:left}
-#colophon>.wrapper>.row-2>.row-1>.col-5>.row-1 img:last-child{padding:0 0 0 30px}
-#colophon>.wrapper>.row-2>.row-1>.col-5>.row-2{margin:auto 0 0 0;padding:10px 0 0 0;text-align:center}
+}#colophon>.wrapper>.row-2>.row-1>.col-5>.row-1 img{width:50%;float:left;padding:5px}
+#colophon>.wrapper>.row-2>.row-1>.col-5>.row-2{margin:auto 0 0 0;padding:5px 0 0 0;text-align:center}
 @media screen and (min-width:900px){#colophon>.wrapper>.row-2>.row-1>.col-5>.row-2{text-align:right}
 }#colophon>.wrapper>.row-2>.row-1>.col-5>.row-2 a{display:inline-block;margin:0 0 0 5px;width:30px;height:30px;padding:7px 0 0 0;border-radius:50%;text-align:center;text-decoration:none;background-color:#677897}
 #colophon>.wrapper>.row-2>.row-1>.col-5>.row-2 a:hover{background-color:#11269b}

@@ -699,14 +699,12 @@
 						img {
 							width: 50%;
 							float: left;
-							&:last-child {
-								padding: 0 0 0 30px;
-							}
+							padding: 5px;
 						}
 					}
 					>.row-2 {
 						margin: auto 0 0 0;
-						padding: 10px 0 0 0;
+						padding: 5px 0 0 0;
 						text-align: center;
 						@media screen and (min-width: $midwidth){
 							text-align: right;
