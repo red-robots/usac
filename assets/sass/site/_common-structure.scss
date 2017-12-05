@@ -437,7 +437,7 @@
 					@include flexbox-align-items(flex-start);
 					@include flexbox-align-content(flex-start);
 					@include flexbox-direction(row);
-					padding: 40px 3.28% 19% 3.28%;
+					padding: 40px 3.28% 10% 3.28%;
 					&:after {
 						display: none;
 					}
@@ -484,7 +484,17 @@
 		}
 	}
 }
-
+#masthead.home {
+	>.row-3 {
+		>.wrapper {
+			>.wrapper {
+				@media screen and (min-width: $midwidth){
+					padding: 40px 3.28% 19% 3.28%;
+				}
+			}
+		}
+	}
+}
 #colophon {
 	background-size: cover;
 	background-position: top center;

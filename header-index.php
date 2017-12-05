@@ -27,7 +27,7 @@
 	if($post):
 		setup_postdata($post);
 	endif;?>
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header home" role="banner">
 		<?php get_template_part("template-parts/content","top-bar");
 		$header_background = get_field("header_background");?>
 		<div class="row-2">

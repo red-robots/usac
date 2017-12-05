@@ -804,7 +804,7 @@ html[xmlns] .flexslider .slides{display:block}
 #masthead>.row-2>.wrapper>.wrapper>.row-2 a.telephone{color:inherit;text-decoration:none;text-transform:uppercase;font-weight:700}
 #masthead>.row-3{background-size:cover;background-repeat:no-repeat;background-position:bottom center}
 #masthead>.row-3>.wrapper>.wrapper{padding:40px 0 130px 0;text-align:center}
-@media screen and (min-width:900px){#masthead>.row-3>.wrapper>.wrapper{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:40px 3.28% 19% 3.28%}
+@media screen and (min-width:900px){#masthead>.row-3>.wrapper>.wrapper{-webkit-flex-wrap:nowrap;-ms-flex-wrap:nowrap;flex-wrap:nowrap;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-align-content:flex-start;-ms-flex-line-pack:start;align-content:flex-start;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;padding:40px 3.28% 10% 3.28%}
 #masthead>.row-3>.wrapper>.wrapper:after{display:none}
 }#masthead>.row-3>.wrapper>.wrapper .icon{display:inline-block;width:45%;padding:10px}
 @media screen and (min-width:900px){#masthead>.row-3>.wrapper>.wrapper .icon{-webkit-box-flex:0 1 auto;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;width:auto;max-width:14%;padding:0 10px}
@@ -812,7 +812,8 @@ html[xmlns] .flexslider .slides{display:block}
 #masthead>.row-3>.wrapper>.wrapper .icon a{display:block;color:inherit;text-decoration:none}
 #masthead>.row-3>.wrapper>.wrapper .icon a img{width:auto;display:inline-block}
 #masthead>.row-3>.wrapper>.wrapper .icon a .text{text-align:center;font-weight:700;font-size:14px}
-#colophon{background-size:cover;background-position:top center;background-repeat:no-repeat;padding:10% 0 0 0}
+@media screen and (min-width:900px){#masthead.home>.row-3>.wrapper>.wrapper{padding:40px 3.28% 19% 3.28%}
+}#colophon{background-size:cover;background-position:top center;background-repeat:no-repeat;padding:10% 0 0 0}
 #colophon>.wrapper>.delivery-methods{border-bottom:1px solid lightgrey}
 #colophon>.wrapper>.delivery-methods>.wrapper header{text-align:center}
 #colophon>.wrapper>.delivery-methods>.wrapper header h2{font-size:35px;font-weight:500;line-height:1.2;margin:0;text-transform:none}
