@@ -34,8 +34,31 @@
         <div class="row-2">
             <a href="<?php echo $quote_link;?>"><?php echo $quote_text;?></a>
         </div><!--.row-2-->
-    <?php endif;
-    $copy = get_field("row_3_copy");
+    <?php endif;?>
+    <?php $delivery_methods = get_field("delivery_methods",35);
+    $delivery_methods_title = get_field("delivery_methods_title",35);
+    if($delivery_methods):?>
+        <section class="delivery-methods">
+            <div class="wrapper">
+                <?php if($delivery_methods_title):?>
+                    <header><h2><?php echo $delivery_methods_title;?></h2></header>
+                <?php endif;?>
+                <div class="wrapper clear-bottom">
+                    <?php foreach($delivery_methods as $row):?>
+                        <?php if($row['image']&&$row['title']&&$row['link']):?>
+                            <div class="method js-blocks" 
+                            <?php echo 'style="background-image: url('.$row['image']['sizes']['large'].');"';?>>
+                                <a href="<?php echo $row['link'];?>">
+                                    <h3><?php echo $row['title'];?></h3>
+                                </a>
+                            </div><!--.method-->
+                        <?php endif;?>
+                    <?php endforeach;?>
+                </div><!--.wrapper-->
+            </div><!--.wrapper-->
+        </section><!--.delivery-methods-->
+    <?php endif;?>
+    <?php $copy = get_field("row_3_copy");
     if($copy):?>
         <section class="row-3 copy">
             <?php echo $copy;?>

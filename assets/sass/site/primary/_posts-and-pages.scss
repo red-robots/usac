@@ -66,6 +66,58 @@
 
         }
     }
+    >.delivery-methods {
+        margin: 20px auto 0 auto;
+        @media screen and (min-width: $midwidth){
+            margin: 8% auto 0 auto;
+        }
+        >.wrapper {
+            header {
+                text-align: center;
+                h2 {
+                    font-size: 35px;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin: 0;
+                    text-transform: none;
+                }
+            }
+            >.wrapper {
+                padding: 0 0 20px 0;
+                @media screen and (min-width: $midwidth){
+                    padding: 4% 4% 0 4%;
+                }
+                .method {
+                    background-position: center;
+                    background-size: 100%;
+                    border-radius: 3px;
+                    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: $midwidth){
+                        width: calc(50% - 30px);
+                        float: left;
+                        margin: 15px;
+                    }
+                    &:hover {
+                        background-size: 110% auto;
+                        transition: all 0.2s;
+                        -webkit-transition: all 0.2s;
+                    }
+                    a {
+                        text-align: center;
+                        display: block;
+                        padding: 10%;
+                        color: white;
+                        text-decoration: none;
+                        h3 {
+                            margin: 0;
+                            text-shadow: 2px 2px 2px black;
+                        }
+                    }
+                }
+            }
+        }
+    }
     >.row-3.copy {
         text-align: center;
         font-size: 14px;

@@ -24,4 +24,4 @@ get_header("index"); ?>
 	</div><!-- #primary -->
 
 <?php
-get_footer("index");
+get_footer();
