@@ -22,26 +22,30 @@ global $template;
     <?php endif;?>
     <div class="row-2 clear-bottom">
         <aside class="col-1" id="secondary" role="complementary">
-            <?php if($template):?>
-                <div class="menu">
-                    <?php switch($template):
-                        case "track":
-                            wp_nav_menu( array( 'theme_location' => 'track'));
-                        break;
-                        case "tools":
-                            wp_nav_menu( array( 'theme_location' => 'tools'));
-                        break;
-                        case "ship":
-                            wp_nav_menu( array( 'theme_location' => 'ship'));
-                        break;
-                        case "services":
-                            wp_nav_menu( array( 'theme_location' => 'services'));
-                        break;
-                        default:
-                            wp_nav_menu( array( 'theme_location' => 'default'));
-                        break;
-                    endswitch;?>
-                </div><!--.menu-->
+            <?php $parent = wp_get_post_parent_id(get_the_ID());
+            if($parent):?>
+                    <?php $args = array(
+                        'post_type'=>'page',
+                        'posts_per_page'=>-1,
+                        'post_parent'=>$parent,
+                        'order'=>'ASC',
+                        'orderby'=>'title'
+                    );
+                    $query = new WP_Query($args);
+                    if($query->have_posts()):?>    
+                        <div class="menu">
+                            <ul>
+                                <?php while($query->have_posts()):$query->the_post();?>
+                                    <li>
+                                        <a href="<?php echo get_the_permalink();?>">
+                                            <?php the_title();?>
+                                        </a>
+                                    </li>
+                                <?php endwhile;?>
+                            </ul>
+                        </div><!--.menu-->
+                        <?php wp_reset_postdata();
+                    endif;?>
             <?php endif;?>
             <div class="widget">
                 <?php get_sidebar();?>

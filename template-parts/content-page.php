@@ -43,7 +43,8 @@
                                 <?php endwhile;?>
                             </ul>
                         </div><!--.menu-->
-                    <?php endif;?>
+                        <?php wp_reset_postdata();
+                    endif;?>
             <?php endif;?>
             <div class="widget">
                 <?php get_sidebar();?>
