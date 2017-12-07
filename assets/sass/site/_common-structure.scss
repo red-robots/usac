@@ -255,9 +255,13 @@
 						margin: 0 auto;
 						display: block;
 						width: 90%;
+						@media screen and (min-width: $tabwidth){
+							width: 50%;
+						}
 						@media screen and (min-width: $midwidth){
 							margin: 0;
 							width: auto;
+							width: 20%;
 						}
 						a {
 							display: block;

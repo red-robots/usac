@@ -72,7 +72,13 @@
                     <div class="service clear-bottom">
                         <?php if($row['image']):?>
                             <div class="col-1">
-                                <img src="<?php echo $row['image']['sizes']['thumbnail'];?>" alt="<?php echo $image['alt'];?>">
+                                <?php if($row['link']):?>
+                                    <a href="<?php echo $row['link'];?>">
+                                <?php endif;?>
+                                    <img src="<?php echo $row['image']['sizes']['thumbnail'];?>" alt="<?php echo $image['alt'];?>">    
+                                <?php if($row['link']):?>
+                                    </a>
+                                <?php endif;?>
                             </div><!--.col-1-->
                         <?php endif;
                         if($row['copy']):?>
