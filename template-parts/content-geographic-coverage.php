@@ -22,14 +22,16 @@ global $template;
     <?php endif;?>
     <div class="row-2 clear-bottom">
         <aside class="col-1" id="secondary" role="complementary">
-            <?php $parent = wp_get_post_parent_id(get_the_ID());
+            <?php $this_id = get_the_ID();
+            $parent = wp_get_post_parent_id($this_id);
             if($parent):?>
                     <?php $args = array(
                         'post_type'=>'page',
                         'posts_per_page'=>-1,
                         'post_parent'=>$parent,
                         'order'=>'ASC',
-                        'orderby'=>'title'
+                        'orderby'=>'title',
+                        'post__not_in'=>array($this_id)
                     );
                     $query = new WP_Query($args);
                     if($query->have_posts()):?>    
@@ -54,6 +56,21 @@ global $template;
         <section class="col-2">
             <div class="copy">
                 <?php the_content();?>
+                <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/custom/services.js"></script>
+                <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/custom/ac_runactivecontent.js"></script>
+                <script type="text/javascript">
+                    /* 
+                    * FadingText(divName, numSteps, BGColor)
+                    * divName : Must match the DIV names defined at the end of the BODY)
+                    * numSteps: The number of steps in the fading transition
+                    * BGColor : The background colour of the DIV or document.
+                    */
+                        FadingText('fade1', 0,"FFFFFF");
+
+                    /*** The "Frame Interval" Smaller = faster ***/
+                        FadeInterval=30;
+
+                    </script>
                 <div id="right_panel" style="float:left;">
             <div class="box">
             <div class="topleft">
@@ -133,7 +150,6 @@ document.write('<DIV ID="fade1"><h1>A</h1><h2>Alaska</h2><p>Anchorage, Fairbanks
     </div>
     <!-- Wrapper End -->
    <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/custom/tooltip.js"></script>
-   <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/custom/temp.js"></script>
     <map name="m_00000001" id="m_00000001">
 <area shape="poly" coords="135,89,89,74,44,98,44,49,68,20,81,15,108,27" href="#" onMouseover="ddrivetip('<strong>Alaska:</strong> Anchorage, Fairbanks, Ketchikan, Juneau', 200)"; onMouseout="hideddrivetip()" target="None" />
 

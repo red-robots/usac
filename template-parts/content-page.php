@@ -21,14 +21,16 @@
     <?php endif;?>
     <div class="row-2 clear-bottom">
         <aside class="col-1" id="secondary" role="complementary">
-            <?php $parent = wp_get_post_parent_id(get_the_ID());
+            <?php $this_id = get_the_ID();
+            $parent = wp_get_post_parent_id($this_id);
             if($parent):?>
                     <?php $args = array(
                         'post_type'=>'page',
                         'posts_per_page'=>-1,
                         'post_parent'=>$parent,
                         'order'=>'ASC',
-                        'orderby'=>'title'
+                        'orderby'=>'title',
+                        'post__not_in'=>array($this_id)
                     );
                     $query = new WP_Query($args);
                     if($query->have_posts()):?>    
