@@ -251,7 +251,7 @@
 						@include flexbox-align-content(center);
 						@include flexbox-direction(row);
 					}
-					h1 {
+					h1, .logo {
 						margin: 0 auto;
 						display: block;
 						width: 90%;
