@@ -39,7 +39,7 @@ var jsVendorFile        = 'vendors'; // Compiled JS vendors file name.
 									// Default set to vendors i.e. vendors.js.
 
 
-var jsCustomSRC         = './assets/js/custom/*.js'; // Path to JS custom scripts folder.
+var jsCustomSRC         = './assets/js/custom/custom.js'; // Path to JS custom scripts folder.
 var jsCustomDestination = './assets/js/'; // Path to place the compiled JS custom scripts file.
 var jsCustomFile        = 'custom'; // Compiled JS custom file name.
 									// Default set to custom i.e. custom.js.

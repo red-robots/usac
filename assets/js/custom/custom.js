@@ -68,4 +68,30 @@ jQuery(document).ready(function ($) {
 	------------------------------------*/
 	new WOW().init();
 
+
+	/* initialize map higlight */
+    (function () {
+        var $map = $('.map');
+        if($map.length===0 || $('map').length ===0)
+            return;
+        var imgSizeHolder = $map[0].naturalWidth;
+        $areas = $('map').find('area');
+        var initCoords = new Array();
+        $areas.each(function(index,area){
+           initCoords.push($(area).attr('coords').split(','));
+        });
+        function scale() {
+            $areas.each(function(index, area){
+                var coords = initCoords[index].slice();
+                $.each(coords,function(index,el){
+                    el = el*($map.width()/imgSizeHolder);
+                    coords[index] = el;
+                });
+                $areas.eq(index).attr('coords',coords.join(','));
+            });
+        }
+        scale();
+        $(window).on('resize',scale);
+	})();
+	
 });// END #####################################    END

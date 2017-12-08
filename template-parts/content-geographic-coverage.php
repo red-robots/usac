@@ -54,10 +54,9 @@ global $template;
             </div><!--.widget-->
         </aside><!--.col-1-->
         <section class="col-2">
-            <div class="copy">
+            <div class="copy clear-bottom">
                 <?php the_content();?>
                 <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/custom/services.js"></script>
-                <script type="text/javascript" src="<?php echo get_template_directory_uri();?>/assets/js/custom/ac_runactivecontent.js"></script>
                 <script type="text/javascript">
                     /* 
                     * FadingText(divName, numSteps, BGColor)
@@ -70,15 +69,15 @@ global $template;
                     /*** The "Frame Interval" Smaller = faster ***/
                         FadeInterval=30;
 
-                    </script>
+                </script>
                 <div id="right_panel" style="float:left;">
-            <div class="box">
-            <div class="topleft">
+                <div class="box">
+                <div class="topleft">
                 <div class="topright">
                   <div>
                       <h1>Geographical Coverage</h1>
                       <p>Serving the United States<br />Package delivery on time - local or long distance.<br />Select The State For a Sampling of Our Service Area</p>
-                      <div><img src="<?php echo get_template_directory_uri();?>/images/map.jpg" alt="Geographical Coverage" name="n00000001" width="675" height="473" border="0" usemap="#m_00000001" id="n00000001" /></div>
+                      <div><img class="map" src="<?php echo get_template_directory_uri();?>/images/map.jpg" alt="Geographical Coverage" name="n00000001" width="675" height="473" border="0" usemap="#m_00000001" id="n00000001" /></div>
                       <hr noshade="noshade" size="1" />
                       <p>For states beginning with:</p>
                 			<div class="alphabets">

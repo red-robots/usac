@@ -170,7 +170,7 @@ function setColor(fadeObj)
 function fade_up(theDiv, newText, newColor)
 {
                var f=FadingObject[theDiv];
- 
+
                if(newColor == null)
                               newColor="FFFFFF";
  
