@@ -40,6 +40,7 @@ function acstarter_setup() {
     'sitemap' => esc_html__( 'Sitemap', 'acstarter' ),
     'quick-links' => esc_html__( 'Quick Links', 'acstarter' ),
     'resources' => esc_html__( 'Resources', 'acstarter' ),
+    'locations' => esc_html__( 'Locations', 'acstarter' ),
     'company' => esc_html__( 'Company', 'acstarter' ),
     'tools' => esc_html__( 'Tools', 'acstarter' ),
     'track' => esc_html__( 'Track', 'acstarter' ),

@@ -41,6 +41,7 @@
 					<?php $footer_row_2_company_title = get_field("footer_row_2_company_title","option");
 					$footer_row_2_quick_links_title = get_field("footer_row_2_quick_links_title","option");
 					$footer_row_2_resources_title = get_field("footer_row_2_resources_title","option");
+					$footer_row_2_locations_title = get_field("footer_row_2_locations_title","option");
 					$facebook_link = get_field("facebook_link","option");
 					$instagram_link = get_field("instagram_link","option");?>
 					<div class="logo col-1">
@@ -59,6 +60,10 @@
 						<?php wp_nav_menu( array( 'theme_location' => 'resources' ) ); ?>
 					</div><!--.col-4-->
 					<div class="col-5">
+						<header><h2><?php echo $footer_row_2_locations_title;?></h2></header>
+						<?php wp_nav_menu( array( 'theme_location' => 'location' ) ); ?>
+					</div><!--.col-5-->
+					<div class="col-6">
 						<div class="row-1 clear-bottom">
 							<img src="<?php echo get_template_directory_uri()."/images/ariba.png";?>" alt="ariba logo">
 							<img src="<?php echo get_template_directory_uri()."/images/wbenc.png";?>" alt="wbenc logo">
@@ -79,7 +84,7 @@
 								<?php endif;?>
 							</div><!--.row-2-->
 						<?php endif;?>
-					</div><!--.col-5-->
+					</div><!--.col-6-->
 				</div><!--.row-1-->
 				<?php $copyright = get_field("copyright","option");
 				if($copyright):?>
