@@ -61,7 +61,7 @@
 					</div><!--.col-4-->
 					<div class="col-5">
 						<header><h2><?php echo $footer_row_2_locations_title;?></h2></header>
-						<?php wp_nav_menu( array( 'theme_location' => 'location' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'locations' ) ); ?>
 					</div><!--.col-5-->
 					<div class="col-6">
 						<div class="row-1 clear-bottom">
