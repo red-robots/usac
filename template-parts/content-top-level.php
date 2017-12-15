@@ -43,6 +43,22 @@
                 </div><!--.menu-->
                 <?php wp_reset_postdata();
             endif;?>
+            <?php $testimonials = get_field("testimonials","option");
+            if($testimonials):
+                $max = count($testimonials);
+                $i = rand(0,$max-1);
+                if($testimonials[$i]['testimonial']):?>
+                    <div class="testimonial copy">
+                        <?php echo $testimonials[$i]['testimonial'];?>
+                    </div><!--.testimonials-->
+                <?php endif;
+            endif;?>
+            <?php $image = get_field("sidebar_image");
+            if($image):?>
+                <div class="image">
+                    <img src="<?php echo $image['sizes']['large'];?>" alt="<?php echo $image['alt'];?>">
+                </div><!--.image-->
+            <?php endif;?>
             <div class="widget">
                 <?php get_sidebar();?>
             </div><!--.widget-->

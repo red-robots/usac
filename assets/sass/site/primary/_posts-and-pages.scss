@@ -220,12 +220,12 @@
                         a {
                             text-decoration: none;
                             font-size: 16px;
-                            color: $color__text-main;
+                            color: $color__usac-dark-blue;
                             @media screen and (min-width: $midwidth){
                                 font-size: 20px;
                             }
                             &:hover {
-                                color: $color__usac-dark-blue;
+                                color: $color__text-main;
                             }
                         }
                         .sub-menu {
@@ -233,6 +233,17 @@
                         }
                     }
                 }
+            }
+            .testimonial {
+                margin: 20px 0 0 0;
+                border: 1px solid $color__usac-icon-blue;
+                padding: 20px;
+                font-size: 16px;
+            }
+            .image {
+                margin: 20px 0 0 0;
+                display: block;
+                width: 100%;
             }
             .widget {
 
