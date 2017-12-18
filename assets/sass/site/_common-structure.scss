@@ -775,3 +775,16 @@
 	z-index: 101;
 	visibility: hidden;
 }
+#main #mc_embed_signup .button {
+	border: 1px solid $color__usac-button-blue;
+	box-shadow: none;
+	background: transparent;
+	color: $color__usac-button-blue;
+	text-shadow: none;
+	transition: 0s all;
+	border-radius: 900px;
+	&:hover {
+		color: white;
+		background-color: $color__usac-button-blue;
+	}
+}
