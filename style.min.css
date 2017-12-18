@@ -866,8 +866,8 @@ html[xmlns] .flexslider .slides{display:block}
 #colophon>.wrapper>.row-2>.row-2{padding:20px 0 0 0;font-size:14px;color:lightgrey;text-align:center}
 #dhtmltooltip{position:absolute;left:-300px;width:250px;border:1px solid black;padding:2px;background-color:lightyellow;visibility:hidden;font-size:11px;z-index:100;filter:progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135)}
 #dhtmlpointer{position:absolute;left:-300px;z-index:101;visibility:hidden}
-#main #mc_embed_signup .button{border:1px solid #1c71ab;box-shadow:none;background:transparent;color:#1c71ab;text-shadow:none;-webkit-transition:0s all;transition:0s all;border-radius:900px}
-#main #mc_embed_signup .button:hover{color:white;background-color:#1c71ab}
+#main #mc_embed_signup .button,input[type=submit]{border:1px solid #1c71ab;box-shadow:none;background:transparent;color:#1c71ab;text-shadow:none;-webkit-transition:0s all;transition:0s all;border-radius:900px}
+#main #mc_embed_signup .button:hover,input[type=submit]:hover{color:white;background-color:#1c71ab}
 @media screen and (min-width:900px){.template-index{margin:-6% 0 0 0}
 }@media screen and (min-width:900px){.template-index>.row-1>.col-1{float:left;width:58%;padding:55px 4% 0 0}
 }.template-index>.row-1>.col-1 .iframe-wrapper{position:relative;padding:0 0 56.25% 0;box-shadow:2px 2px 60px rgba(0,0,0,0.4)}
