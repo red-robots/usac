@@ -917,7 +917,10 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:900px){.template-page>.row-2>aside.col-1 .menu ul li a,.template-sitemap>.row-2>aside.col-1 .menu ul li a,.error-404>.row-2>aside.col-1 .menu ul li a{font-size:20px}
 }.template-page>.row-2>aside.col-1 .menu ul li a:hover,.template-sitemap>.row-2>aside.col-1 .menu ul li a:hover,.error-404>.row-2>aside.col-1 .menu ul li a:hover{color:#677897}
 .template-page>.row-2>aside.col-1 .menu ul li .sub-menu,.template-sitemap>.row-2>aside.col-1 .menu ul li .sub-menu,.error-404>.row-2>aside.col-1 .menu ul li .sub-menu{padding:0 0 0 20px}
-.template-page>.row-2>aside.col-1 .testimonial,.template-sitemap>.row-2>aside.col-1 .testimonial,.error-404>.row-2>aside.col-1 .testimonial{margin:20px 0 0 0;border:1px solid #4a90e2;padding:20px;font-size:16px}
+.template-page>.row-2>aside.col-1 .testimonial,.template-sitemap>.row-2>aside.col-1 .testimonial,.error-404>.row-2>aside.col-1 .testimonial{margin:20px 0 0 0;border-bottom:1px solid #e74c3c}
+.template-page>.row-2>aside.col-1 .testimonial header,.template-sitemap>.row-2>aside.col-1 .testimonial header,.error-404>.row-2>aside.col-1 .testimonial header{padding:10px;background-color:#e74c3c}
+.template-page>.row-2>aside.col-1 .testimonial header h2,.template-sitemap>.row-2>aside.col-1 .testimonial header h2,.error-404>.row-2>aside.col-1 .testimonial header h2{margin:0;color:white;font-size:16px}
+.template-page>.row-2>aside.col-1 .testimonial .copy,.template-sitemap>.row-2>aside.col-1 .testimonial .copy,.error-404>.row-2>aside.col-1 .testimonial .copy{padding:20px;font-size:16px}
 .template-page>.row-2>aside.col-1 .image,.template-sitemap>.row-2>aside.col-1 .image,.error-404>.row-2>aside.col-1 .image{margin:20px 0 0 0;display:block;width:100%}
 @media screen and (min-width:900px){.template-page>.row-2>.col-2,.template-sitemap>.row-2>.col-2,.error-404>.row-2>.col-2{float:left;width:60%}
 }.template-page>.row-2>.col-2 .copy.services,.template-sitemap>.row-2>.col-2 .copy.services,.error-404>.row-2>.col-2 .copy.services{margin:0}

@@ -49,12 +49,18 @@
                     endif;?>
             <?php endif;?>
             <?php $testimonials = get_field("testimonials","option");
+            $testimonials_header = get_field("testimonials_header","option");
             if($testimonials):
                 $max = count($testimonials);
                 $i = rand(0,$max-1);
                 if($testimonials[$i]['testimonial']):?>
-                    <div class="testimonial copy">
-                        <?php echo $testimonials[$i]['testimonial'];?>
+                    <div class="testimonial">
+                        <?php if($testimonials_header):?>
+                            <header><h2><?php echo $testimonials_header;?></h2></header>
+                        <?php endif;?>
+                        <div class="copy">
+                            <?php echo $testimonials[$i]['testimonial'];?>
+                        </div><!--.copy-->
                     </div><!--.testimonials-->
                 <?php endif;
             endif;?>
