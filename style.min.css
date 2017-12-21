@@ -920,7 +920,10 @@ html[xmlns] .flexslider .slides{display:block}
 .template-page>.row-2>aside.col-1 .testimonial,.template-sitemap>.row-2>aside.col-1 .testimonial,.error-404>.row-2>aside.col-1 .testimonial{margin:20px 0 0 0;border-bottom:1px solid #e74c3c}
 .template-page>.row-2>aside.col-1 .testimonial header,.template-sitemap>.row-2>aside.col-1 .testimonial header,.error-404>.row-2>aside.col-1 .testimonial header{padding:10px;background-color:#e74c3c}
 .template-page>.row-2>aside.col-1 .testimonial header h2,.template-sitemap>.row-2>aside.col-1 .testimonial header h2,.error-404>.row-2>aside.col-1 .testimonial header h2{margin:0;color:white;font-size:16px}
-.template-page>.row-2>aside.col-1 .testimonial .copy,.template-sitemap>.row-2>aside.col-1 .testimonial .copy,.error-404>.row-2>aside.col-1 .testimonial .copy{padding:20px;font-size:16px}
+.template-page>.row-2>aside.col-1 .testimonial .text,.template-sitemap>.row-2>aside.col-1 .testimonial .text,.error-404>.row-2>aside.col-1 .testimonial .text{padding:20px;font-size:16px}
+.template-page>.row-2>aside.col-1 .testimonial .text .copy,.template-sitemap>.row-2>aside.col-1 .testimonial .text .copy,.error-404>.row-2>aside.col-1 .testimonial .text .copy{margin:20px 0 0 0;font-style:italic}
+.template-page>.row-2>aside.col-1 .testimonial .text .copy i,.template-sitemap>.row-2>aside.col-1 .testimonial .text .copy i,.error-404>.row-2>aside.col-1 .testimonial .text .copy i{display:inline}
+.template-page>.row-2>aside.col-1 .testimonial .text .author,.template-sitemap>.row-2>aside.col-1 .testimonial .text .author,.error-404>.row-2>aside.col-1 .testimonial .text .author{margin:10px 0 0 0}
 .template-page>.row-2>aside.col-1 .image,.template-sitemap>.row-2>aside.col-1 .image,.error-404>.row-2>aside.col-1 .image{margin:20px 0 0 0;display:block;width:100%}
 @media screen and (min-width:900px){.template-page>.row-2>.col-2,.template-sitemap>.row-2>.col-2,.error-404>.row-2>.col-2{float:left;width:60%}
 }.template-page>.row-2>.col-2 .copy.services,.template-sitemap>.row-2>.col-2 .copy.services,.error-404>.row-2>.col-2 .copy.services{margin:0}

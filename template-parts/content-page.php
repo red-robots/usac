@@ -58,8 +58,22 @@
                         <?php if($testimonials_header):?>
                             <header><h2><?php echo $testimonials_header;?></h2></header>
                         <?php endif;?>
-                        <div class="copy">
-                            <?php echo $testimonials[$i]['testimonial'];?>
+                        <div class="text">
+                            <?php if($testimonials[$i]['header']):?>
+                                <div class="header">
+                                    <?php echo $testimonials[$i]['header'];?>
+                                </div><!--.header-->
+                            <?php endif;?>
+                            <div class="copy">
+                                <sup><i class="fa-quote-left fa"></i></sup>
+                                <?php echo $testimonials[$i]['testimonial'];?>
+                                <sup><i class="fa-quote-right fa"></i></sup>
+                            </div><!--.testimonial-->
+                            <?php if($testimonials[$i]['author']):?>
+                                <div class="author">
+                                    <?php echo $testimonials[$i]['author'];?>
+                                </div><!--.author-->
+                            <?php endif;?>
                         </div><!--.copy-->
                     </div><!--.testimonials-->
                 <?php endif;
