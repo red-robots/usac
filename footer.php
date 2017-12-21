@@ -64,6 +64,7 @@
 							<img src="<?php echo get_template_directory_uri()."/images/ariba.png";?>" alt="ariba logo">
 							<img src="<?php echo get_template_directory_uri()."/images/wbenc.png";?>" alt="wbenc logo">
 							<a target="_blank" href="https://www.sba.gov?ms=badge" title="Visit SBA.gov"><img border="0" src="https://www.sba.gov/badge/sba_med.png" alt="SBA.gov" /></a>
+							<a href="https://www.alignable.com/newton-ma/usa-couriers"><img title="Highly Recommended by Locals On Alignable" src="https://www.alignable.com/generators/badges/highly_recommended/badge/112226/usa-couriers" /></a>
 							<img src="<?php echo get_template_directory_uri()."/images/TAT-logo.jpg";?>" alt="tat logo">
 						</div><!--.row-1-->
 						<?php if($facebook_link||$instagram_link):?>
