@@ -21,28 +21,7 @@
     <?php endif;?>
     <div class="row-2 clear-bottom">
         <aside class="col-1" id="secondary" role="complementary">
-            <?php $args = array(
-                'post_type'=>'page',
-                'posts_per_page'=>-1,
-                'post_parent'=>get_the_ID(),
-                'order'=>'ASC',
-                'orderby'=>'title'
-            );
-            $query = new WP_Query($args);
-            if($query->have_posts()):?>    
-                <div class="menu">
-                    <ul>
-                        <?php while($query->have_posts()):$query->the_post();?>
-                            <li>
-                                <a href="<?php echo get_the_permalink();?>">
-                                    <?php the_title();?>
-                                </a>
-                            </li>
-                        <?php endwhile;?>
-                    </ul>
-                </div><!--.menu-->
-                <?php wp_reset_postdata();
-            endif;?>
+            <?php wp_nav_menu( array( 'theme_location' => 'default' ) ); ?>
             <?php $testimonials = get_field("testimonials","option");
             $testimonials_header = get_field("testimonials_header","option");
             if($testimonials):
