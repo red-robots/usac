@@ -911,12 +911,12 @@ html[xmlns] .flexslider .slides{display:block}
 }@media screen and (min-width:900px){.template-page>.row-1>.col-2,.template-sitemap>.row-1>.col-2,.error-404>.row-1>.col-2{float:left;width:60%}
 }.template-page>.row-1>.col-2 h1,.template-sitemap>.row-1>.col-2 h1,.error-404>.row-1>.col-2 h1{margin:0;font-weight:500;font-size:35px}
 @media screen and (min-width:900px){.template-page>.row-2>aside.col-1,.template-sitemap>.row-2>aside.col-1,.error-404>.row-2>aside.col-1{float:left;width:40%;padding:0 10% 0 0}
-}.template-page>.row-2>aside.col-1 .menu ul,.template-sitemap>.row-2>aside.col-1 .menu ul,.error-404>.row-2>aside.col-1 .menu ul{margin:0;padding:0}
-.template-page>.row-2>aside.col-1 .menu ul li,.template-sitemap>.row-2>aside.col-1 .menu ul li,.error-404>.row-2>aside.col-1 .menu ul li{margin:10px 0;list-style-type:none}
-.template-page>.row-2>aside.col-1 .menu ul li a,.template-sitemap>.row-2>aside.col-1 .menu ul li a,.error-404>.row-2>aside.col-1 .menu ul li a{text-decoration:none;font-size:16px;color:#11269b}
-@media screen and (min-width:900px){.template-page>.row-2>aside.col-1 .menu ul li a,.template-sitemap>.row-2>aside.col-1 .menu ul li a,.error-404>.row-2>aside.col-1 .menu ul li a{font-size:20px}
-}.template-page>.row-2>aside.col-1 .menu ul li a:hover,.template-sitemap>.row-2>aside.col-1 .menu ul li a:hover,.error-404>.row-2>aside.col-1 .menu ul li a:hover{color:#677897}
-.template-page>.row-2>aside.col-1 .menu ul li .sub-menu,.template-sitemap>.row-2>aside.col-1 .menu ul li .sub-menu,.error-404>.row-2>aside.col-1 .menu ul li .sub-menu{padding:0 0 0 20px}
+}.template-page>.row-2>aside.col-1 .menu-default-container ul,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul,.error-404>.row-2>aside.col-1 .menu-default-container ul{margin:0;padding:0}
+.template-page>.row-2>aside.col-1 .menu-default-container ul li,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul li,.error-404>.row-2>aside.col-1 .menu-default-container ul li{margin:10px 0;list-style-type:none}
+.template-page>.row-2>aside.col-1 .menu-default-container ul li a,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul li a,.error-404>.row-2>aside.col-1 .menu-default-container ul li a{text-decoration:none;font-size:16px;color:#11269b}
+@media screen and (min-width:900px){.template-page>.row-2>aside.col-1 .menu-default-container ul li a,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul li a,.error-404>.row-2>aside.col-1 .menu-default-container ul li a{font-size:20px}
+}.template-page>.row-2>aside.col-1 .menu-default-container ul li a:hover,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul li a:hover,.error-404>.row-2>aside.col-1 .menu-default-container ul li a:hover{color:#677897}
+.template-page>.row-2>aside.col-1 .menu-default-container ul li .sub-menu,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul li .sub-menu,.error-404>.row-2>aside.col-1 .menu-default-container ul li .sub-menu{padding:0 0 0 20px}
 .template-page>.row-2>aside.col-1 .testimonial,.template-sitemap>.row-2>aside.col-1 .testimonial,.error-404>.row-2>aside.col-1 .testimonial{margin:20px 0 0 0;border-bottom:1px solid #e74c3c}
 .template-page>.row-2>aside.col-1 .testimonial header,.template-sitemap>.row-2>aside.col-1 .testimonial header,.error-404>.row-2>aside.col-1 .testimonial header{padding:10px;background-color:#e74c3c}
 .template-page>.row-2>aside.col-1 .testimonial header h2,.template-sitemap>.row-2>aside.col-1 .testimonial header h2,.error-404>.row-2>aside.col-1 .testimonial header h2{margin:0;color:white;font-size:16px}
