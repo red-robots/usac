@@ -587,7 +587,7 @@ optgroup{font-weight:bold}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
 button:focus{outline:0}
-body,button,input,select,textarea{color:#677897;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.6}
+body,button,input,select,textarea{color:black;font-family:sans-serif;font-size:16px;font-size:1rem;line-height:1.6}
 .entry-content h1{font-size:30px}
 p{margin-bottom:1.5em}
 dfn,cite,em,i{font-style:italic}
@@ -722,32 +722,32 @@ html[xmlns] .flexslider .slides{display:block}
 .cap{max-width:1500px;padding-right:20px !important;padding-left:20px !important;margin:0 auto}
 @media screen and (min-width:900px){.cap{padding-right:13% !important;padding-left:13% !important}
 }.clear-bottom:after{clear:both;content:"";display:block}
-.copy{font-size:14px;color:#677897}
+.copy{font-size:14px;color:black}
 @media screen and (min-width:600px){.copy{font-size:16px}
 }.copy>*:first-child{margin-top:0;padding-top:0}
 .copy>*:last-child{margin-bottom:0;padding-bottom:0}
 .copy p{margin:20px 0}
 .copy strong,.copy b,.copy em{font-weight:800}
-.copy a{text-decoration:none;color:#677897;position:relative}
-.copy a:hover{color:#677897;text-decoration:underline}
-.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:#677897}
+.copy a{text-decoration:none;color:black;position:relative}
+.copy a:hover{color:black;text-decoration:underline}
+.copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:black}
 .copy h1{font-size:30px}
 .copy h2{font-size:25px}
 .copy h3{font-size:20px}
 .copy>ul,.copy>ol{padding:0;margin:0 0 20px 20px;font-size:inherit}
 .copy>ul li,.copy>ol li{margin:0;font-size:inherit;padding:0;list-style-type:none;text-indent:-14px}
-.copy>ul li:before,.copy>ol li:before{content:"\25A0";color:#677897;margin-right:5px}
+.copy>ul li:before,.copy>ol li:before{content:"\25A0";color:black;margin-right:5px}
 .copy>ul li a,.copy>ol li a{cursor:pointer}
-.copy>ul li a:hover,.copy>ol li a:hover{color:#677897}
+.copy>ul li a:hover,.copy>ol li a:hover{color:black}
 .copy>ul li ul.sub-menu,.copy>ol li ul.sub-menu{margin:0}
 #masthead>.row-1{background:-webkit-linear-gradient(top,white,lightgrey);background:linear-gradient(180deg,white,lightgrey);box-shadow:0 2px 5px rgba(0,0,0,0.4)}
 #masthead>.row-1>.wrapper>.wrapper{padding:10px 0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:flex-start;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 @media screen and (min-width:900px){#masthead>.row-1>.wrapper>.wrapper{padding:10px 3.28%;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
-}#masthead>.row-1>.wrapper>.wrapper>.col-1 .select{position:relative;text-align:center;background-color:white;box-shadow:2px 2px 5px rgba(0,0,0,0.4) inset;border-radius:3px;padding:5px;font-size:12px;color:#677897;margin:0}
+}#masthead>.row-1>.wrapper>.wrapper>.col-1 .select{position:relative;text-align:center;background-color:white;box-shadow:2px 2px 5px rgba(0,0,0,0.4) inset;border-radius:3px;padding:5px;font-size:12px;color:black;margin:0}
 #masthead>.row-1>.wrapper>.wrapper>.col-1 .select:hover .hidden{display:block}
-#masthead>.row-1>.wrapper>.wrapper>.col-1 .select i{color:#677897;padding-left:40px}
+#masthead>.row-1>.wrapper>.wrapper>.col-1 .select i{color:black;padding-left:40px}
 #masthead>.row-1>.wrapper>.wrapper>.col-1 .select .hidden{background-color:white;text-align:left;display:none;position:absolute;top:100%;left:0;width:100%;z-index:10;padding:5px}
-#masthead>.row-1>.wrapper>.wrapper>.col-1 .select .hidden a{display:block;color:#677897;text-decoration:none}
+#masthead>.row-1>.wrapper>.wrapper>.col-1 .select .hidden a{display:block;color:black;text-decoration:none}
 #masthead>.row-1>.wrapper>.wrapper>.col-1 .select .hidden a:hover{color:#11269b}
 #masthead>.row-1>.wrapper>.wrapper>.col-2{text-align:center}
 #masthead>.row-1>.wrapper>.wrapper>.col-2 a.telephone{display:block;text-transform:uppercase;color:#11269b;text-decoration:none;font-size:14px;font-weight:700;vertical-align:middle;margin:10px}
@@ -793,10 +793,10 @@ html[xmlns] .flexslider .slides{display:block}
 }#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu li a{font-size:14px;color:#11269b}
 #masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu li a:hover{color:#4a90e2}
 #masthead>.row-2>.wrapper>.wrapper>.row-2{margin:40px 0 0 0;text-align:center;color:#11269b}
-@media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2{width:60%;margin:40px auto 0 auto}
+@media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2{width:100%;margin:20px auto 0 auto}
 }#masthead>.row-2>.wrapper>.wrapper>.row-2>h1{margin:20px 0;text-transform:uppercase}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2>h1{margin:9% 0}
-}#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy{margin:0 0 40px 0;color:inherit}
+}#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy{margin:0 0 20px 0;color:inherit}
 #masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h1{color:inherit;font-size:25px}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h1{font-size:35px}
 }#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy p{width:80%;margin:0 auto}
@@ -915,7 +915,7 @@ html[xmlns] .flexslider .slides{display:block}
 .template-page>.row-2>aside.col-1 .menu-default-container ul li,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul li,.error-404>.row-2>aside.col-1 .menu-default-container ul li{margin:10px 0;list-style-type:none}
 .template-page>.row-2>aside.col-1 .menu-default-container ul li a,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul li a,.error-404>.row-2>aside.col-1 .menu-default-container ul li a{text-decoration:none;font-size:16px;color:#11269b}
 @media screen and (min-width:900px){.template-page>.row-2>aside.col-1 .menu-default-container ul li a,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul li a,.error-404>.row-2>aside.col-1 .menu-default-container ul li a{font-size:20px}
-}.template-page>.row-2>aside.col-1 .menu-default-container ul li a:hover,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul li a:hover,.error-404>.row-2>aside.col-1 .menu-default-container ul li a:hover{color:#677897}
+}.template-page>.row-2>aside.col-1 .menu-default-container ul li a:hover,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul li a:hover,.error-404>.row-2>aside.col-1 .menu-default-container ul li a:hover{color:black}
 .template-page>.row-2>aside.col-1 .menu-default-container ul li .sub-menu,.template-sitemap>.row-2>aside.col-1 .menu-default-container ul li .sub-menu,.error-404>.row-2>aside.col-1 .menu-default-container ul li .sub-menu{padding:0 0 0 20px}
 .template-page>.row-2>aside.col-1 .testimonial,.template-sitemap>.row-2>aside.col-1 .testimonial,.error-404>.row-2>aside.col-1 .testimonial{margin:20px 0 0 0;border-bottom:1px solid #e74c3c}
 .template-page>.row-2>aside.col-1 .testimonial header,.template-sitemap>.row-2>aside.col-1 .testimonial header,.error-404>.row-2>aside.col-1 .testimonial header{padding:10px;background-color:#e74c3c}

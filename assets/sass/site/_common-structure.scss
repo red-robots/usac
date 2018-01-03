@@ -377,8 +377,8 @@
 					text-align: center;
 					color: $color__usac-dark-blue;
 					@media screen and (min-width: $midwidth){
-						width: 60%;
-						margin: 40px auto 0 auto;
+						width: 100%;
+						margin: 20px auto 0 auto;
 					}
 					> h1 {
 						margin: 20px 0;
@@ -388,7 +388,7 @@
 						}
 					}
 					.copy {
-						margin: 0 0 40px 0;
+						margin: 0 0 20px 0;
 						color: inherit;
 						h1 {
 							color: inherit;
