@@ -3794,11 +3794,11 @@ html[xmlns] .flexslider .slides {
       #masthead > .row-2 > .wrapper > .wrapper > .row-2 .copy {
         margin: 0 0 20px 0;
         color: inherit; }
-        #masthead > .row-2 > .wrapper > .wrapper > .row-2 .copy h1 {
+        #masthead > .row-2 > .wrapper > .wrapper > .row-2 .copy h2 {
           color: inherit;
           font-size: 25px; }
           @media screen and (min-width: 900px) {
-            #masthead > .row-2 > .wrapper > .wrapper > .row-2 .copy h1 {
+            #masthead > .row-2 > .wrapper > .wrapper > .row-2 .copy h2 {
               font-size: 35px; } }
         #masthead > .row-2 > .wrapper > .wrapper > .row-2 .copy p {
           width: 80%;

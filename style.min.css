@@ -797,8 +797,8 @@ html[xmlns] .flexslider .slides{display:block}
 }#masthead>.row-2>.wrapper>.wrapper>.row-2>h1{margin:20px 0;text-transform:uppercase}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2>h1{margin:9% 0}
 }#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy{margin:0 0 20px 0;color:inherit}
-#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h1{color:inherit;font-size:25px}
-@media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h1{font-size:35px}
+#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h2{color:inherit;font-size:25px}
+@media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h2{font-size:35px}
 }#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy p{width:80%;margin:0 auto}
 #masthead>.row-2>.wrapper>.wrapper>.row-2 a.quote{color:inherit;text-transform:uppercase;border:3px solid #11269b;text-decoration:none;padding:10px 15px;font-size:14px;display:inline-block;margin:0 0 10px 0}
 #masthead>.row-2>.wrapper>.wrapper>.row-2 .copy.call{color:inherit;margin:0}
