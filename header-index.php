@@ -47,17 +47,26 @@
 					</div><!--.row-1-->
 					<div class="row-2">
 						<?php $header_copy = get_field("header_copy");
+						$telephone_number = get_field("telephone_number","option");
+ -						$quote_text = get_field("quote_text","option");
+ -						$quote_link = get_field("quote_link","option");
 						$call_copy = get_field("call_copy");?>
 						<?php if($header_copy):?>
 							<div class="copy">
 								<?php echo $header_copy;?>
 							</div><!--.copy-->
 						<?php endif;
+						if($quote_link&&$quote_text):?>
+							<a class="quote" href="<?php echo $quote_link;?>"><?php echo $quote_text;?></a>										 
+						<?php endif;
 						if($call_copy):?>
 							<div class="call copy">
 								<?php echo $call_copy;?>
 							</div><!--.call .copy-->
-						<?php endif;?>
+						<?php endif;
+						if($telephone_number):?>
+ 							<a class="telephone" href="tel:<?php echo preg_replace("[^0-9]","",$telephone_number);?>"><?php echo $telephone_number;?></a>
+  						<?php endif;?>
 					</div><!--.row-2-->
 				</div><!--.wrapper-->
 			</div><!--.wrapper .cap-->
