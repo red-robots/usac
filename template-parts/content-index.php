@@ -16,14 +16,18 @@
         <section class="row-1 clear-bottom">
             <?php if($video):?>
                 <div class="col-1">
-                    <div class="iframe-wrapper">
-                        <?php echo $video;?>
-                    </div><!--.iframe-wrapper-->
+                    <div class="wrapper">
+                        <div class="iframe-wrapper">
+                            <?php echo $video;?>
+                        </div><!--.iframe-wrapper-->
+                    </div><!--.wrapper-->
                 </div><!--.col-1-->
             <?php endif;
             if($copy):?>
-                <div class="col-2 copy">
-                    <?php echo $copy;?>
+                <div class="col-2">
+                    <div class="wrapper copy">
+                        <?php echo $copy;?>
+                    </div><!--.wrapper.copy-->
                 </div><!--.col-2-->
             <?php endif;?>
         </section><!--.row-1-->

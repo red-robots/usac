@@ -876,12 +876,14 @@ html[xmlns] .flexslider .slides{display:block}
 #main #mc_embed_signup .button:hover,input[type=submit]:hover{color:white;background-color:#1c71ab}
 @media screen and (min-width:900px){.template-index{margin:-6% 0 0 0}
 }@media screen and (min-width:900px){.template-index>.row-1>.col-1{float:left;width:58%;padding:55px 4% 0 0}
-}.template-index>.row-1>.col-1 .iframe-wrapper{position:relative;padding:0 0 56.25% 0;box-shadow:2px 2px 60px rgba(0,0,0,0.4)}
-.template-index>.row-1>.col-1 .iframe-wrapper iframe{border:0;width:100%;height:100%;position:absolute;top:0;left:0}
-.template-index>.row-1>.col-2.copy{font-size:14px;margin:20px 0 0 0}
-@media screen and (min-width:900px){.template-index>.row-1>.col-2.copy{float:left;width:42%;margin:0;padding:0 0 0 4%}
-}.template-index>.row-1>.col-2.copy h2{font-size:35px;font-weight:500;line-height:1.2;text-transform:none}
-.template-index>.row-1>.col-2.copy p{margin:20px 0 0 15px;color:#404d66}
+}.template-index>.row-1>.col-1>.wrapper{border:2px solid #e74c3c;padding:10px}
+.template-index>.row-1>.col-1>.wrapper .iframe-wrapper{position:relative;padding:0 0 56.25% 0;box-shadow:2px 2px 60px rgba(0,0,0,0.4)}
+.template-index>.row-1>.col-1>.wrapper .iframe-wrapper iframe{border:0;width:100%;height:100%;position:absolute;top:0;left:0}
+.template-index>.row-1>.col-2{font-size:14px;margin:20px 0 0 0}
+@media screen and (min-width:900px){.template-index>.row-1>.col-2{float:left;width:42%;margin:0;padding:0 0 0 4%}
+}.template-index>.row-1>.col-2>.wrapper.copy{padding:10px;border:2px solid #11269b}
+.template-index>.row-1>.col-2>.wrapper.copy h2{font-size:35px;font-weight:500;line-height:1.2;text-transform:none}
+.template-index>.row-1>.col-2>.wrapper.copy p{margin:20px 0 0 15px;color:#404d66}
 .template-index>.row-2{text-align:center;margin:20px 0 0 0}
 @media screen and (min-width:900px){.template-index>.row-2{margin:8% 0 0 0}
 }.template-index>.row-2 a{text-decoration:none;color:#1c71ab;font-size:14px;display:inline-block;padding:10px 60px;border-width:2px;border-style:solid;border-radius:900px}
