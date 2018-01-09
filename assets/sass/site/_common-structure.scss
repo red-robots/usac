@@ -355,6 +355,7 @@
 											a {
 												font-size: 14px;
 												color: white;
+												text-shadow: none;
 												@media screen and (min-width: $midwidth){
 													color: $color__usac-dark-blue;
 												}

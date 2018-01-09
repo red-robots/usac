@@ -790,7 +790,7 @@ html[xmlns] .flexslider .slides{display:block}
 #masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu:before{position:absolute;content:"";width:15px;top:0;left:20px;border-top:12px solid #4a90e2;border-left:15px solid transparent;border-right:15px solid transparent}
 }#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu li{text-align:center;display:block;text-transform:capitalize}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu li{margin:10px 0;text-align:left;line-height:1.2}
-}#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu li a{font-size:14px;color:white}
+}#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu li a{font-size:14px;color:white;text-shadow:none}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu li a{color:#11269b}
 }#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu li a:hover{color:#4a90e2}
 #masthead>.row-2>.wrapper>.wrapper>.row-2{margin:40px 0 0 0;text-align:center;color:white}
