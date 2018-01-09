@@ -720,7 +720,7 @@ html[xmlns] .flexslider .slides{display:block}
 }.widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
 .cap{max-width:1500px;padding-right:20px !important;padding-left:20px !important;margin:0 auto}
-@media screen and (min-width:900px){.cap{padding-right:13% !important;padding-left:13% !important}
+@media screen and (min-width:900px){.cap{padding-right:5% !important;padding-left:5% !important}
 }.clear-bottom:after{clear:both;content:"";display:block}
 .copy{font-size:14px;color:black}
 @media screen and (min-width:600px){.copy{font-size:16px}
@@ -784,7 +784,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li{margin:0 35px;display:inline-block}
 }#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li:hover .sub-menu{display:block}
 #masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li:last-child{margin-right:0}
-#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li a{color:white;text-decoration:none;font-weight:700}
+#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li a{color:white;text-decoration:none;font-weight:700;text-shadow:2px 2px 2px black}
 #masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li a:hover{color:#11269b}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu{width:250px;background-color:white;border-top:5px solid #4a90e2;position:absolute;display:none;top:100%;left:50%;padding:20px 25px 15px 25px;box-shadow:1px 1px 10px #404d66;-ms-transform:translateX(-20%) translateY(0);-webkit-transform:translateX(-20%) translateY(0);transform:translateX(-20%) translateY(0)}
 #masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu:before{position:absolute;content:"";width:15px;top:0;left:20px;border-top:12px solid #4a90e2;border-left:15px solid transparent;border-right:15px solid transparent}
@@ -805,8 +805,7 @@ html[xmlns] .flexslider .slides{display:block}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h3{font-size:25px}
 }#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy p{width:80%;margin:0 auto;font-size:18px;line-height:1.2}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy p{font-size:20px}
-}#masthead>.row-2>.wrapper>.wrapper>.row-2 a.quote{color:inherit;text-transform:uppercase;border:3px solid #11269b;text-decoration:none;padding:10px 15px;font-size:14px;display:inline-block;margin:0 0 10px 0}
-#masthead>.row-2>.wrapper>.wrapper>.row-2 a.quote:hover{color:#11269b}
+}#masthead>.row-2>.wrapper>.wrapper>.row-2 a.quote{color:#11269b;text-transform:uppercase;border:3px solid #11269b;text-decoration:none;padding:10px 15px;font-size:14px;display:inline-block;margin:0 0 10px 0}
 #masthead>.row-2>.wrapper>.wrapper>.row-2 .copy.call{color:inherit;margin:0}
 #masthead>.row-2>.wrapper>.wrapper>.row-2 a.telephone{color:inherit;text-decoration:none;text-transform:uppercase;font-weight:700}
 #masthead>.row-3{background-size:cover;background-repeat:no-repeat;background-position:bottom center}
