@@ -732,7 +732,7 @@ html[xmlns] .flexslider .slides{display:block}
 .copy a:hover{color:black;text-decoration:underline}
 .copy h1,.copy h2,.copy h3{margin:0 0 10px 0;text-transform:uppercase;color:black}
 .copy h1{font-size:30px}
-.copy h2{padding:10px;background-color:#11269b;color:white;font-size:25px}
+.copy h2{font-size:25px}
 .copy h3{font-size:20px}
 .copy>ul,.copy>ol{padding:0;margin:0 0 20px 20px;font-size:inherit}
 .copy>ul li,.copy>ol li{margin:0;font-size:inherit;padding:0;list-style-type:none;text-indent:-14px}
@@ -934,7 +934,8 @@ html[xmlns] .flexslider .slides{display:block}
 .template-page>.row-2>aside.col-1 .testimonial .text .author,.template-sitemap>.row-2>aside.col-1 .testimonial .text .author,.error-404>.row-2>aside.col-1 .testimonial .text .author{margin:10px 0 0 0}
 .template-page>.row-2>aside.col-1 .image,.template-sitemap>.row-2>aside.col-1 .image,.error-404>.row-2>aside.col-1 .image{margin:20px 0 0 0;display:block;width:100%}
 @media screen and (min-width:900px){.template-page>.row-2>.col-2,.template-sitemap>.row-2>.col-2,.error-404>.row-2>.col-2{float:left;width:60%}
-}.template-page>.row-2>.col-2 .copy.services,.template-sitemap>.row-2>.col-2 .copy.services,.error-404>.row-2>.col-2 .copy.services{margin:0}
+}.template-page>.row-2>.col-2 .copy h2,.template-sitemap>.row-2>.col-2 .copy h2,.error-404>.row-2>.col-2 .copy h2{padding:10px;background-color:#11269b;color:white}
+.template-page>.row-2>.col-2 .copy.services,.template-sitemap>.row-2>.col-2 .copy.services,.error-404>.row-2>.col-2 .copy.services{margin:0}
 .template-page>.row-2>.col-2 header,.template-sitemap>.row-2>.col-2 header,.error-404>.row-2>.col-2 header{margin:20px 0}
 @media screen and (min-width:900px){.template-page>.row-2>.col-2 header,.template-sitemap>.row-2>.col-2 header,.error-404>.row-2>.col-2 header{margin:10% 0 20px 0}
 }.template-page>.row-2>.col-2 header h2,.template-sitemap>.row-2>.col-2 header h2,.error-404>.row-2>.col-2 header h2{margin:0;font-size:35px;line-height:1.2;font-weight:500}

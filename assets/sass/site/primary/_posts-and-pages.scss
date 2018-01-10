@@ -284,6 +284,11 @@
                 width: 60%;
             }
             .copy {
+                h2 {
+                    padding: 10px;
+                    background-color: $color__usac-dark-blue;
+                    color: white;
+                }
                 &.services {
                     margin: 0;
                 }
