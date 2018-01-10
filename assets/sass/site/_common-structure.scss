@@ -381,11 +381,12 @@
 					> h1 {
 						margin: 20px 0;
 						text-transform: uppercase;
-						color: $color__usac-dark-blue;
+						color: $color__usac-red;
+						font-family: $font__serif;
 						font-size: 25px;
 						@media screen and (min-width: $midwidth){
 							margin: 9% 0;
-							font-size: 45px;
+							font-size: 55px;
 						}
 					}
 					.copy {
@@ -401,6 +402,9 @@
 							}
 							.blue {
 								color: $color__usac-dark-blue;
+							}
+							.red {
+								color: $color__usac-red;
 							}
 						}
 						h3 {
@@ -423,9 +427,9 @@
 						}
 					}
  					a.quote {
-						color: $color__usac-dark-blue;
+						color: $color__usac-red;
 						text-transform: uppercase;
-						border: 3px solid $color__usac-dark-blue;
+						border: 3px solid $color__usac-red;
 						text-decoration: none;
 						padding: 10px 15px;
 						font-size: 14px;

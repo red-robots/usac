@@ -795,17 +795,18 @@ html[xmlns] .flexslider .slides{display:block}
 }#masthead>.row-2>.wrapper>.wrapper>.row-1 nav#site-navigation .menu-primary-container ul li .sub-menu li a:hover{color:#4a90e2}
 #masthead>.row-2>.wrapper>.wrapper>.row-2{margin:40px 0 0 0;text-align:center;color:white}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2{width:100%;margin:20px auto 0 auto}
-}#masthead>.row-2>.wrapper>.wrapper>.row-2>h1{margin:20px 0;text-transform:uppercase;color:#11269b;font-size:25px}
-@media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2>h1{margin:9% 0;font-size:45px}
+}#masthead>.row-2>.wrapper>.wrapper>.row-2>h1{margin:20px 0;text-transform:uppercase;color:#e74c3c;font-family:serif;font-size:25px}
+@media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2>h1{margin:9% 0;font-size:55px}
 }#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy{margin:0 0 20px 0;color:white}
 #masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h2{font-size:25px;color:white;line-height:1;margin:0}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h2{font-size:35px}
 }#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h2 .blue{color:#11269b}
+#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h2 .red{color:#e74c3c}
 #masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h3{font-size:20px;color:white;margin:0;line-height:1}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy h3{font-size:25px}
 }#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy p{width:80%;margin:0 auto;font-size:18px;line-height:1.2}
 @media screen and (min-width:900px){#masthead>.row-2>.wrapper>.wrapper>.row-2 .copy p{font-size:20px}
-}#masthead>.row-2>.wrapper>.wrapper>.row-2 a.quote{color:#11269b;text-transform:uppercase;border:3px solid #11269b;text-decoration:none;padding:10px 15px;font-size:14px;display:inline-block;margin:0 0 10px 0}
+}#masthead>.row-2>.wrapper>.wrapper>.row-2 a.quote{color:#e74c3c;text-transform:uppercase;border:3px solid #e74c3c;text-decoration:none;padding:10px 15px;font-size:14px;display:inline-block;margin:0 0 10px 0}
 #masthead>.row-2>.wrapper>.wrapper>.row-2 .copy.call{color:inherit;margin:0}
 #masthead>.row-2>.wrapper>.wrapper>.row-2 a.telephone{color:inherit;text-decoration:none;text-transform:uppercase;font-weight:700}
 #masthead>.row-3{background-size:cover;background-repeat:no-repeat;background-position:bottom center}
@@ -875,18 +876,18 @@ html[xmlns] .flexslider .slides{display:block}
 #main #mc_embed_signup .button:hover,input[type=submit]:hover{color:white;background-color:#1c71ab}
 @media screen and (min-width:900px){.template-index{margin:-6% 0 0 0}
 }@media screen and (min-width:900px){.template-index>.row-1>.col-1{float:left;width:58%;padding:55px 4% 0 0}
-}.template-index>.row-1>.col-1>.wrapper{border:2px solid #e74c3c;padding:10px}
+}.template-index>.row-1>.col-1>.wrapper{border:4px solid #e74c3c;padding:10px}
 .template-index>.row-1>.col-1>.wrapper .iframe-wrapper{position:relative;padding:0 0 56.25% 0;box-shadow:2px 2px 60px rgba(0,0,0,0.4)}
 .template-index>.row-1>.col-1>.wrapper .iframe-wrapper iframe{border:0;width:100%;height:100%;position:absolute;top:0;left:0}
 .template-index>.row-1>.col-2{font-size:14px;margin:20px 0 0 0}
 @media screen and (min-width:900px){.template-index>.row-1>.col-2{float:left;width:42%;margin:0;padding:0 0 0 4%}
-}.template-index>.row-1>.col-2>.wrapper.copy{padding:10px;border:2px solid #11269b}
+}.template-index>.row-1>.col-2>.wrapper.copy{padding:10px;border:4px solid #11269b}
 .template-index>.row-1>.col-2>.wrapper.copy h2{font-size:35px;font-weight:500;line-height:1.2;text-transform:none}
 .template-index>.row-1>.col-2>.wrapper.copy p{margin:20px 0 0 15px;color:#404d66}
 .template-index>.row-2{text-align:center;margin:20px 0 0 0}
 @media screen and (min-width:900px){.template-index>.row-2{margin:8% 0 0 0}
-}.template-index>.row-2 a{text-decoration:none;color:#1c71ab;font-size:14px;display:inline-block;padding:10px 60px;border-width:2px;border-style:solid;border-radius:900px}
-.template-index>.row-2 a:hover{color:white;background-color:#1c71ab}
+}.template-index>.row-2 a{text-decoration:none;color:#e74c3c;font-size:14px;display:inline-block;padding:10px 60px;border-width:2px;border-style:solid;border-radius:900px}
+.template-index>.row-2 a:hover{color:white;background-color:#e74c3c}
 .template-index>.delivery-methods{margin:20px auto 0 auto}
 @media screen and (min-width:900px){.template-index>.delivery-methods{margin:8% auto 0 auto}
 }.template-index>.delivery-methods>.wrapper header{text-align:center}
