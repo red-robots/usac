@@ -82,11 +82,15 @@
 						<?php wp_nav_menu( array( 'theme_location' => 'resources' ) ); ?>
 					</div><!--.col-4-->
 					<div class="col-5">
+						<div class="row-1">
+							<a href="https://static1.squarespace.com/static/52b07f32e4b007c7c22600c3/t/553a6ecae4b0f85361ab779f/1429892810236/FINAL+SPP+Brochure.pdf" target="_blank"><img src="<?php echo get_template_directory_uri()."/images/TAT-logo.jpg";?>" alt="tat logo"></a>
+						</div><!--.row-1-->
+					</div><!--.col-5-->
+					<div class="col-6">
 						<div class="row-1 clear-bottom">
 							<img src="<?php echo get_template_directory_uri()."/images/ariba.png";?>" alt="ariba logo">
 							<img src="<?php echo get_template_directory_uri()."/images/wbenc.png";?>" alt="wbenc logo">
 							<a target="_blank" href="https://www.sba.gov?ms=badge" title="Visit SBA.gov"><img border="0" src="https://www.sba.gov/badge/sba_med.png" alt="SBA.gov" /></a>
-							<img src="<?php echo get_template_directory_uri()."/images/TAT-logo.jpg";?>" alt="tat logo">
 						</div><!--.row-1-->
 						<?php if($facebook_link||$instagram_link):?>
 							<div class="row-2">
