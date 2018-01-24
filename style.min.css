@@ -743,6 +743,8 @@ html[xmlns] .flexslider .slides{display:block}
 .copy>ul li a,.copy>ol li a{cursor:pointer}
 .copy>ul li a:hover,.copy>ol li a:hover{color:black}
 .copy>ul li ul.sub-menu,.copy>ol li ul.sub-menu{margin:0}
+a.red-button{text-decoration:none;color:white;text-transform:uppercase;border:3px solid #e74c3c;background-color:#e74c3c;font-size:14px;display:inline-block;padding:10px 60px;border-radius:900px;margin:10px 0}
+a.red-button:hover{color:white;text-decoration:none}
 #masthead>.row-1{background:#e74c3c;box-shadow:0 2px 5px rgba(0,0,0,0.4)}
 #masthead>.row-1>.wrapper>.wrapper{padding:10px 0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-justify-content:flex-start;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-align-content:stretch;-ms-flex-line-pack:stretch;align-content:stretch;-webkit-flex-direction:column;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
 @media screen and (min-width:900px){#masthead>.row-1>.wrapper>.wrapper{padding:10px 3.28%;-webkit-justify-content:space-between;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-flex-direction:row;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}

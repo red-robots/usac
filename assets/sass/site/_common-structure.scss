@@ -94,6 +94,22 @@
 	  }
 	}
 }
+a.red-button {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	border: 3px solid $color__usac-red;
+	background-color: $color__usac-red;
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px 60px;
+	border-radius: 900px;
+	margin: 10px 0;
+	&:hover {
+		color: white;
+		text-decoration: none;
+	}
+}
 #masthead {
 	>.row-1 {
 		background: $color__usac-red;
