@@ -43,7 +43,8 @@
 					$footer_row_2_resources_title = get_field("footer_row_2_resources_title","option");
 					$footer_row_2_locations_title = get_field("footer_row_2_locations_title","option");
 					$facebook_link = get_field("facebook_link","option");
-					$instagram_link = get_field("instagram_link","option");?>
+					$instagram_link = get_field("instagram_link","option");
+					$youtube_link = get_field("youtube_link","option");?>
 					<div class="logo col-1">
 						<a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri()."/images/logo.png";?>" alt="<?php bloginfo('name'); ?>"></a>
 					</div><!--.logo-->
@@ -71,7 +72,7 @@
 							<a target="_blank" href="https://www.sba.gov?ms=badge" title="Visit SBA.gov"><img border="0" src="https://www.sba.gov/badge/sba_med.png" alt="SBA.gov" /></a>
 							<a href="https://www.alignable.com/newton-ma/usa-couriers" target="_blank"><img title="Highly Recommended by Locals On Alignable" src="https://www.alignable.com/generators/badges/highly_recommended/badge/112226/usa-couriers" /></a>
 						</div><!--.row-1-->
-						<?php if($facebook_link||$instagram_link):?>
+						<?php if($facebook_link||$instagram_link||$youtube_link):?>
 							<div class="row-2">
 								<?php if($instagram_link):?>
 									<a class="instagram" href="<?php echo $instagram_link;?>">
@@ -81,6 +82,11 @@
 								<?php if($facebook_link):?>
 									<a class="facebook" href="<?php echo $facebook_link;?>">
 										<i class="fa fa-facebook"></i>
+									</a>
+								<?php endif;?>
+								<?php if($youtube_link):?>
+									<a class="youtube" href="<?php echo $youtube_link;?>">
+										<i class="fa fa-youtube"></i>
 									</a>
 								<?php endif;?>
 							</div><!--.row-2-->

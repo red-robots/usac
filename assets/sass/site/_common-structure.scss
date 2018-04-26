@@ -800,7 +800,7 @@ a.red-button {
 						}
 						a {
 							display: inline-block;
-							margin: 0 0 0 5px;
+							margin: 0 2.5px;
 							width: 30px;
 							height: 30px;
 							padding: 7px 0 0 0;
@@ -808,6 +808,9 @@ a.red-button {
 							text-align: center;
 							text-decoration: none;
 							background-color: $color__usac-text;
+							@media screen and (min-width: $midwidth){
+								margin: 0 0 0 5px;
+							}
 							&:hover {
 								background-color: $color__usac-dark-blue;
 							}
