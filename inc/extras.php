@@ -14,16 +14,22 @@
  * @return array
  */
 function acstarter_body_classes( $classes ) {
-	// Adds a class of group-blog to blogs with more than 1 published author.
-	if ( is_multi_author() ) {
-		$classes[] = 'group-blog';
-	}
+  // Adds a class of group-blog to blogs with more than 1 published author.
+  if ( is_multi_author() ) {
+    $classes[] = 'group-blog';
+  }
 
-	// Adds a class of hfeed to non-singular pages.
-	if ( ! is_singular() ) {
-		$classes[] = 'hfeed';
-	}
+  // Adds a class of hfeed to non-singular pages.
+  if ( ! is_singular() ) {
+    $classes[] = 'hfeed';
+  }
 
-	return $classes;
+  return $classes;
 }
 add_filter( 'body_class', 'acstarter_body_classes' );
+
+function add_query_vars_filter( $vars ) {
+  $vars[] = "pg";
+  return $vars;
+}
+add_filter( 'query_vars', 'add_query_vars_filter' );
